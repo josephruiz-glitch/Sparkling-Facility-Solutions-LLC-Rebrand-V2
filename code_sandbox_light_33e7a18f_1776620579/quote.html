@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Free Commercial Cleaning Quote | Upload Floor Plans & Scope | Sparkling Facility Solutions Florida</title>
+  <meta name="description" content="Request a free, tailored commercial cleaning quote from Sparkling Facility Solutions. Upload your floor plans, scope of work, or project documents. A Florida cleaning specialist responds within 2 business hours." />
+  <meta name="keywords" content="commercial cleaning quote Florida, post construction cleaning estimate, free cleaning proposal Florida, facility cleaning bid, janitorial quote request Florida" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sparklingfacilitysolutions.com/quote.html" />
+  <meta property="og:title" content="Get a Free Commercial Cleaning Quote | Sparkling Facility Solutions" />
+  <meta property="og:description" content="Upload your floor plans and scope of work. Get a tailored proposal within 2 business hours from Florida's commercial cleaning experts." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
+
+  <style>
+    .quote-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: var(--space-3xl);
+      align-items: start;
+    }
+
+    .quote-sidebar {
+      position: sticky;
+      top: calc(var(--nav-height) + 20px);
+    }
+
+    /* Step Indicator overrides */
+    .step-indicator {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      margin-bottom: var(--space-2xl);
+      position: relative;
+    }
+
+    .step-indicator__step {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .step-indicator__step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: var(--color-border);
+      z-index: 0;
+    }
+
+    .step-indicator__step.completed:not(:last-child)::after {
+      background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    }
+
+    .step-indicator__circle {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border-strong);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      background: var(--color-bg-card);
+      z-index: 1;
+      transition: all var(--transition-base);
+    }
+
+    .step-indicator__step.active .step-indicator__circle {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      border-color: transparent;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(0,212,255,0.4);
+    }
+
+    .step-indicator__step.completed .step-indicator__circle {
+      background: var(--color-accent);
+      border-color: transparent;
+      color: var(--color-bg-darkest);
+    }
+
+    .step-indicator__label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      margin-top: var(--space-sm);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .step-indicator__step.active .step-indicator__label { color: var(--color-primary); }
+
+    /* Form Steps */
+    .form-step { display: none; }
+    .form-step.active { display: block; animation: fadeSlide 0.35s ease; }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateX(16px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Option Cards (for step selection) */
+    .option-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+
+    .option-card {
+      background: var(--color-bg-glass-light);
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      cursor: pointer;
+      transition: all var(--transition-base);
+      text-align: center;
+      position: relative;
+    }
+
+    .option-card:hover {
+      border-color: var(--color-border-strong);
+      background: var(--color-primary-glow);
+    }
+
+    .option-card.selected {
+      border-color: var(--color-primary);
+      background: rgba(0,212,255,0.08);
+      box-shadow: 0 0 20px rgba(0,212,255,0.15);
+    }
+
+    .option-card.selected::after {
+      content: '✓';
+      position: absolute;
+      top: 8px; right: 10px;
+      font-size: 0.75rem;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .option-card__icon { font-size: 2rem; margin-bottom: var(--space-sm); }
+    .option-card__label { font-size: 0.85rem; font-weight: 600; color: var(--color-text-primary); }
+    .option-card__desc { font-size: 0.72rem; color: var(--color-text-muted); margin-top: 4px; }
+
+    /* AI Recommender panel */
+    .ai-recommendation {
+      background: linear-gradient(135deg, rgba(0,71,255,0.12), rgba(0,212,255,0.06));
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+    }
+
+    .ai-rec__avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .ai-rec__label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .ai-rec__text {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Review Summary */
+    .review-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.875rem;
+    }
+
+    .review-item:last-child { border-bottom: none; }
+    .review-item__label { color: var(--color-text-muted); font-size: 0.8rem; }
+    .review-item__value { color: var(--color-text-primary); font-weight: 600; text-align: right; max-width: 60%; }
+
+    /* Sidebar trust items */
+    .trust-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .trust-list__item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+    }
+
+    .trust-list__icon {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-sm);
+      background: rgba(0,212,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .trust-list__title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+
+    .trust-list__desc {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+
+    .form-divider {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: var(--space-2xl) 0;
+    }
+
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: var(--space-2xl);
+      gap: var(--space-md);
+    }
+
+    @media (max-width: 1024px) {
+      .quote-layout { grid-template-columns: 1fr; }
+      .quote-sidebar { position: static; }
+    }
+
+    @media (max-width: 640px) {
+      .option-cards { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .option-cards { grid-template-columns: 1fr; }
+    }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* Success state */
+    #quote-success {
+      display: none;
+      text-align: center;
+      padding: var(--space-4xl) var(--space-xl);
+    }
+
+    #quote-success.show { display: block; animation: fadeSlide 0.5s ease; }
+
+    .success-icon {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto var(--space-xl);
+      box-shadow: 0 0 40px rgba(0,212,255,0.4);
+    }
+
+    .next-steps {
+      background: rgba(0,212,255,0.06);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      text-align: left;
+      max-width: 480px;
+      margin: var(--space-xl) auto var(--space-2xl);
+    }
+
+    .next-step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      padding: var(--space-sm) 0;
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+    }
+
+    .next-step-item span:first-child {
+      color: var(--color-primary);
+      font-weight: 700;
+      flex-shrink: 0;
+      min-width: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="sr-only" style="position:absolute;z-index:9999;padding:8px 16px;background:var(--color-primary);color:#000;font-weight:700;border-radius:4px;">Skip to Main Content</a>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="padding-bottom:var(--space-2xl);" aria-labelledby="quote-page-title">
+      <div class="container page-hero__inner text-center">
+        <div class="section-label fade-in" style="justify-content:center;">AI-Powered Intake</div>
+        <h1 class="fade-in" id="quote-page-title" style="margin-bottom:var(--space-lg);">
+          Get Your Free<br />
+          <em style="font-style:normal;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Commercial Cleaning Quote</em>
+        </h1>
+        <p class="section-subtitle fade-in" style="margin:0 auto var(--space-xl);">
+          Fill out our smart intake form, upload your floor plans, scope of work, or project docs. 
+          A senior Sparkling Facility Solutions specialist will respond with a tailored proposal 
+          within 2 business hours.
+        </p>
+
+        <!-- Quick Trust Badges -->
+        <div style="display:flex;gap:var(--space-lg);justify-content:center;flex-wrap:wrap;" class="fade-in" role="list" aria-label="Quick trust indicators">
+          <div class="badge badge--primary" role="listitem"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2-Hour Response</div>
+          <div class="badge badge--success" role="listitem"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Licensed &amp; Insured</div>
+          <div class="badge badge--gold" role="listitem"><i class="fa-solid fa-star" aria-hidden="true"></i> No Commitment Required</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE FORM SECTION -->
+    <section class="section" aria-labelledby="quote-form-heading">
+      <div class="container">
+        <div class="quote-layout">
+
+          <!-- MAIN FORM -->
+          <div>
+            <h2 id="quote-form-heading" class="sr-only">Quote Request Form</h2>
+
+            <!-- Step Indicator -->
+            <div class="step-indicator" role="list" aria-label="Form progress" id="step-indicator">
+              <div class="step-indicator__step active" role="listitem" id="ind-1">
+                <div class="step-indicator__circle">1</div>
+                <span class="step-indicator__label">Project Info</span>
+              </div>
+              <div class="step-indicator__step" role="listitem" id="ind-2">
+                <div class="step-indicator__circle">2</div>
+                <span class="step-indicator__label">Facility Details</span>
+              </div>
+              <div class="step-indicator__step" role="listitem" id="ind-3">
+                <div class="step-indicator__circle">3</div>
+                <span class="step-indicator__label">Upload Documents</span>
+              </div>
+              <div class="step-indicator__step" role="listitem" id="ind-4">
+                <div class="step-indicator__circle">4</div>
+                <span class="step-indicator__label">Your Information</span>
+              </div>
+              <div class="step-indicator__step" role="listitem" id="ind-5">
+                <div class="step-indicator__circle">5</div>
+                <span class="step-indicator__label">Review &amp; Submit</span>
+              </div>
+            </div>
+
+            <!-- Form Container -->
+            <div class="card" id="quote-form-container" style="padding:var(--space-2xl);">
+              <form id="quote-form" novalidate aria-label="Commercial cleaning quote request form">
+
+                <!-- ────────────────── STEP 1: PROJECT INFO ────────────────── -->
+                <div class="form-step active" id="step-1" aria-label="Step 1: Project Information">
+                  <h3 style="margin-bottom:var(--space-sm);">What type of project are you working on?</h3>
+                  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin-bottom:var(--space-xl);">
+                    Select the cleaning service that best matches your needs. This helps us route your inquiry to the right specialist.
+                  </p>
+
+                  <div class="option-cards" role="group" aria-label="Service type selection" id="service-options">
+                    <label class="option-card" tabindex="0" role="radio" aria-checked="false">
+                      <input type="radio" name="service_type" value="post-construction" style="position:absolute;opacity:0;" />
+                      <div class="option-card__icon" aria-hidden="true">🏗️</div>
+                      <div class="option-card__label">Post-Construction</div>
+                      <div class="option-card__desc">New build, renovation, or TI final clean</div>
+                    </label>
+                    <label class="option-card" tabindex="0" role="radio" aria-checked="false">
+                      <input type="radio" name="service_type" value="janitorial" style="position:absolute;opacity:0;" />
+                      <div class="option-card__icon" aria-hidden="true">🏢</div>
+                      <div class="option-card__label">Ongoing Janitorial</div>
+                      <div class="option-card__desc">Recurring nightly or weekly program</div>
+                    </label>
+                    <label class="option-card" tabindex="0" role="radio" aria-checked="false">
+                      <input type="radio" name="service_type" value="turnover" style="position:absolute;opacity:0;" />
+                      <div class="option-card__icon" aria-hidden="true">🔑</div>
+                      <div class="option-card__label">Turnover / Move-In</div>
+                      <div class="option-card__desc">Unit or suite ready for occupancy</div>
+                    </label>
+                    <label class="option-card" tabindex="0" role="radio" aria-checked="false">
+                      <input type="radio" name="service_type" value="floor-care" style="position:absolute;opacity:0;" />
+                      <div class="option-card__icon" aria-hidden="true">✨</div>
+                      <div class="option-card__label">Floor Care</div>
+                      <div class="option-card__desc">Strip/wax, carpet extraction, polish</div>
+                    </label>
+                    <label class="option-card" tabindex="0" role="radio" aria-checked="false">
+                      <input type="radio" name="service_type" value="day-porter" style="position:absolute;opacity:0;" />
+                      <div class="option-card__icon" aria-hidden="true">👷</div>
+                      <div class="option-card__label">Day Porter</div>
+                      <div class="option-card__desc">On-site daytime cleaning staff</div>
+                    </label>
+                    <label class="option-card" tabindex="0" role="radio" aria-checked="false">
+                      <input type="radio" name="service_type" value="multiple" style="position:absolute;opacity:0;" />
+                      <div class="option-card__icon" aria-hidden="true">🔬</div>
+                      <div class="option-card__label">Multiple / Other</div>
+                      <div class="option-card__desc">Bundled services or specialty needs</div>
+                    </label>
+                  </div>
+
+                  <!-- AI Recommendation -->
+                  <div class="ai-recommendation" id="ai-rec" style="display:none;" aria-live="polite">
+                    <div class="ai-rec__avatar" aria-hidden="true">⚡</div>
+                    <div>
+                      <div class="ai-rec__label">SPARK AI Recommendation</div>
+                      <div class="ai-rec__text" id="ai-rec-text"></div>
+                    </div>
+                  </div>
+
+                  <div class="nav-buttons">
+                    <div></div>
+                    <button type="button" class="btn btn--primary btn--lg" data-next aria-label="Go to next step">
+                      Next: Facility Details <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- ────────────────── STEP 2: FACILITY DETAILS ────────────── -->
+                <div class="form-step" id="step-2" aria-label="Step 2: Facility Details">
+                  <h3 style="margin-bottom:var(--space-sm);">Tell us about your facility</h3>
+                  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin-bottom:var(--space-xl);">
+                    This helps us understand the scope and provide an accurate proposal. All fields with * are required.
+                  </p>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="facility_type" class="form-label">Facility Type <span>*</span></label>
+                      <select id="facility_type" name="facility_type" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select facility type...</option>
+                        <option value="office">Office / Corporate</option>
+                        <option value="new-construction">New Construction</option>
+                        <option value="renovation">Renovation / TI</option>
+                        <option value="retail">Retail / Shopping Center</option>
+                        <option value="medical">Medical / Dental Office</option>
+                        <option value="healthcare-admin">Healthcare Admin Facility</option>
+                        <option value="warehouse">Warehouse / Distribution</option>
+                        <option value="industrial">Industrial / Manufacturing</option>
+                        <option value="school">School / Educational</option>
+                        <option value="hoa">HOA / Residential Community</option>
+                        <option value="hospitality">Hotel / Hospitality</option>
+                        <option value="restaurant">Restaurant / Food Service</option>
+                        <option value="other">Other Commercial</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="square_footage" class="form-label">Approximate Square Footage <span>*</span></label>
+                      <select id="square_footage" name="square_footage" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select size range...</option>
+                        <option value="under-1000">Under 1,000 sq ft</option>
+                        <option value="1000-3000">1,000 – 3,000 sq ft</option>
+                        <option value="3000-5000">3,000 – 5,000 sq ft</option>
+                        <option value="5000-10000">5,000 – 10,000 sq ft</option>
+                        <option value="10000-25000">10,000 – 25,000 sq ft</option>
+                        <option value="25000-50000">25,000 – 50,000 sq ft</option>
+                        <option value="50000-100000">50,000 – 100,000 sq ft</option>
+                        <option value="100000-plus">100,000+ sq ft</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="service_frequency" class="form-label">Service Frequency <span>*</span></label>
+                      <select id="service_frequency" name="service_frequency" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select frequency...</option>
+                        <option value="one-time">One-Time Project</option>
+                        <option value="daily">Daily (5 days/week)</option>
+                        <option value="daily-7">Daily (7 days/week)</option>
+                        <option value="3x-week">3x per week</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="biweekly">Bi-weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly Deep Clean</option>
+                        <option value="multiple">Multiple Services</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="service_region" class="form-label">Florida Region <span>*</span></label>
+                      <select id="service_region" name="service_region" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select your region...</option>
+                        <option value="miami">Miami / Miami-Dade</option>
+                        <option value="fort-lauderdale">Fort Lauderdale / Broward</option>
+                        <option value="west-palm">West Palm Beach / Palm Beach County</option>
+                        <option value="naples-fortmyers">Naples / Fort Myers / SWFL</option>
+                        <option value="key-west">Key West / Florida Keys</option>
+                        <option value="tampa">Tampa / St. Petersburg</option>
+                        <option value="orlando">Orlando / Central Florida</option>
+                        <option value="jacksonville">Jacksonville / Northeast FL</option>
+                        <option value="gainesville">Gainesville / North Central FL</option>
+                        <option value="statewide">Statewide / Multiple Locations</option>
+                        <option value="other-fl">Other Florida Location</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="timeline" class="form-label">Project Timeline <span>*</span></label>
+                      <select id="timeline" name="timeline" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>When do you need service?</option>
+                        <option value="urgent-24hrs">Urgent — Within 24 Hours</option>
+                        <option value="urgent-48hrs">Urgent — Within 48 Hours</option>
+                        <option value="this-week">This Week</option>
+                        <option value="next-week">Next Week</option>
+                        <option value="this-month">Within This Month</option>
+                        <option value="next-month">Next Month</option>
+                        <option value="planning">Planning Phase — TBD</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="num_buildings" class="form-label">Number of Buildings / Locations</label>
+                      <select id="num_buildings" name="num_buildings" class="form-select">
+                        <option value="1" selected>1 Location</option>
+                        <option value="2-3">2–3 Locations</option>
+                        <option value="4-10">4–10 Locations</option>
+                        <option value="10-plus">10+ Locations</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group" style="margin-top:var(--space-lg);">
+                    <label for="project_description" class="form-label">Project Description <span>*</span></label>
+                    <textarea
+                      id="project_description"
+                      name="project_description"
+                      class="form-textarea"
+                      rows="4"
+                      placeholder="Describe your project scope, specific requirements, special access considerations, preferred cleaning times, or anything else that helps us understand your needs..."
+                      required
+                      aria-required="true"
+                    ></textarea>
+                  </div>
+
+                  <div class="nav-buttons">
+                    <button type="button" class="btn btn--ghost" data-prev>
+                      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back
+                    </button>
+                    <button type="button" class="btn btn--primary btn--lg" data-next>
+                      Next: Upload Documents <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- ────────────────── STEP 3: FILE UPLOAD ────────────────── -->
+                <div class="form-step" id="step-3" aria-label="Step 3: Document Upload">
+                  <h3 style="margin-bottom:var(--space-sm);">Upload Your Project Documents</h3>
+                  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin-bottom:var(--space-xl);">
+                    Uploading documents helps us prepare a significantly more accurate proposal. 
+                    All document types are accepted. This step is optional but highly recommended 
+                    for post-construction and large facility projects.
+                  </p>
+
+                  <!-- Floor Plans Upload -->
+                  <div style="margin-bottom:var(--space-xl);">
+                    <div style="font-size:0.85rem;font-weight:700;color:var(--color-text-primary);margin-bottom:var(--space-sm);">
+                      <i class="fa-solid fa-drafting-compass" style="color:var(--color-primary);margin-right:6px;" aria-hidden="true"></i>
+                      Floor Plans &amp; Site Drawings
+                    </div>
+                    <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:var(--space-md);">
+                      Architectural plans, CAD files, or site drawings that show the layout of spaces to be cleaned.
+                    </p>
+                    <div class="upload-zone" id="floor-plan-zone" role="button" tabindex="0" aria-label="Upload floor plans. Click or drag files here.">
+                      <input type="file" multiple accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg,.tif,.svg" id="floor-plan-input" aria-label="Select floor plan files" />
+                      <div class="upload-zone__icon" aria-hidden="true"><i class="fa-solid fa-drafting-compass"></i></div>
+                      <div class="upload-zone__title">Drop floor plans here or click to browse</div>
+                      <div class="upload-zone__desc">Supports PDF, DWG, DXF, CAD, PNG, JPG, TIFF</div>
+                      <div class="upload-zone__formats" aria-label="Supported file formats">
+                        <span class="upload-zone__format">.pdf</span>
+                        <span class="upload-zone__format">.dwg</span>
+                        <span class="upload-zone__format">.dxf</span>
+                        <span class="upload-zone__format">.png/.jpg</span>
+                        <span class="upload-zone__format">.tif</span>
+                      </div>
+                    </div>
+                    <div class="file-list" id="floor-plan-list" aria-live="polite" aria-label="Uploaded floor plan files"></div>
+                  </div>
+
+                  <hr class="form-divider" aria-hidden="true" />
+
+                  <!-- Scope of Work Upload -->
+                  <div style="margin-bottom:var(--space-xl);">
+                    <div style="font-size:0.85rem;font-weight:700;color:var(--color-text-primary);margin-bottom:var(--space-sm);">
+                      <i class="fa-solid fa-file-lines" style="color:var(--color-primary);margin-right:6px;" aria-hidden="true"></i>
+                      Scope of Work &amp; Specifications
+                    </div>
+                    <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:var(--space-md);">
+                      Project specs, cleaning specification documents, bid invitations, or any scope-of-work documents.
+                    </p>
+                    <div class="upload-zone" id="scope-zone" role="button" tabindex="0" aria-label="Upload scope of work documents. Click or drag files here.">
+                      <input type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.txt" id="scope-input" aria-label="Select scope of work files" />
+                      <div class="upload-zone__icon" aria-hidden="true"><i class="fa-solid fa-file-contract"></i></div>
+                      <div class="upload-zone__title">Drop scope documents here or click to browse</div>
+                      <div class="upload-zone__desc">Supports PDF, Word, Excel, and text documents</div>
+                      <div class="upload-zone__formats" aria-label="Supported file formats">
+                        <span class="upload-zone__format">.pdf</span>
+                        <span class="upload-zone__format">.doc/.docx</span>
+                        <span class="upload-zone__format">.xls/.xlsx</span>
+                        <span class="upload-zone__format">.txt</span>
+                      </div>
+                    </div>
+                    <div class="file-list" id="scope-list" aria-live="polite" aria-label="Uploaded scope files"></div>
+                  </div>
+
+                  <hr class="form-divider" aria-hidden="true" />
+
+                  <!-- Site Photos Upload -->
+                  <div>
+                    <div style="font-size:0.85rem;font-weight:700;color:var(--color-text-primary);margin-bottom:var(--space-sm);">
+                      <i class="fa-solid fa-camera" style="color:var(--color-primary);margin-right:6px;" aria-hidden="true"></i>
+                      Site Photos (Optional)
+                    </div>
+                    <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:var(--space-md);">
+                      Photos of the space, construction progress, or specific areas of concern. 
+                      Very helpful for accurate post-construction pricing.
+                    </p>
+                    <div class="upload-zone" id="photos-zone" role="button" tabindex="0" aria-label="Upload site photos. Click or drag files here.">
+                      <input type="file" multiple accept="image/*" id="photos-input" aria-label="Select site photo files" />
+                      <div class="upload-zone__icon" aria-hidden="true"><i class="fa-solid fa-images"></i></div>
+                      <div class="upload-zone__title">Drop photos here or click to browse</div>
+                      <div class="upload-zone__desc">JPG, PNG, HEIC, WEBP — up to 10 photos</div>
+                      <div class="upload-zone__formats" aria-label="Supported image formats">
+                        <span class="upload-zone__format">.jpg</span>
+                        <span class="upload-zone__format">.png</span>
+                        <span class="upload-zone__format">.heic</span>
+                        <span class="upload-zone__format">.webp</span>
+                      </div>
+                    </div>
+                    <div class="file-list" id="photos-list" aria-live="polite" aria-label="Uploaded photo files"></div>
+                  </div>
+
+                  <div style="margin-top:var(--space-xl);padding:var(--space-md);background:rgba(0,255,179,0.06);border:1px solid rgba(0,255,179,0.2);border-radius:var(--radius-md);font-size:0.8rem;color:var(--color-text-secondary);">
+                    <i class="fa-solid fa-lock" style="color:var(--color-accent);margin-right:6px;" aria-hidden="true"></i>
+                    <strong style="color:var(--color-text-primary);">Secure Upload:</strong>
+                    All documents are transmitted securely and used only for preparing your quote. 
+                    We do not share your project documents with third parties. Max 50MB per file, 10 files per type.
+                  </div>
+
+                  <div class="nav-buttons">
+                    <button type="button" class="btn btn--ghost" data-prev>
+                      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back
+                    </button>
+                    <button type="button" class="btn btn--primary btn--lg" data-next>
+                      Next: Your Information <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- ────────────────── STEP 4: CONTACT INFO ────────────────── -->
+                <div class="form-step" id="step-4" aria-label="Step 4: Your Contact Information">
+                  <h3 style="margin-bottom:var(--space-sm);">Your Contact Information</h3>
+                  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin-bottom:var(--space-xl);">
+                    We need this to route your quote to the right specialist and deliver your proposal. Fields marked * are required.
+                  </p>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="first_name" class="form-label">First Name <span>*</span></label>
+                      <input type="text" id="first_name" name="first_name" class="form-input" placeholder="Your first name" required aria-required="true" autocomplete="given-name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name" class="form-label">Last Name <span>*</span></label>
+                      <input type="text" id="last_name" name="last_name" class="form-input" placeholder="Your last name" required aria-required="true" autocomplete="family-name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="company_name" class="form-label">Company / Organization <span>*</span></label>
+                      <input type="text" id="company_name" name="company_name" class="form-input" placeholder="Your company name" required aria-required="true" autocomplete="organization" />
+                    </div>
+                    <div class="form-group">
+                      <label for="job_title" class="form-label">Your Title / Role <span>*</span></label>
+                      <select id="job_title" name="job_title" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select your role...</option>
+                        <option value="General Contractor / Project Manager">General Contractor / Project Manager</option>
+                        <option value="Property Manager">Property Manager</option>
+                        <option value="Facility Manager">Facility Manager</option>
+                        <option value="Office Manager">Office Manager</option>
+                        <option value="Operations Manager">Operations Manager</option>
+                        <option value="Procurement / Purchasing">Procurement / Purchasing</option>
+                        <option value="Business Owner">Business Owner</option>
+                        <option value="Real Estate Professional">Real Estate Professional</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="form-label">Business Email Address <span>*</span></label>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="yourname@company.com" required aria-required="true" autocomplete="email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone" class="form-label">Phone Number <span>*</span></label>
+                      <input type="tel" id="phone" name="phone" class="form-input" placeholder="(305) 000-0000" required aria-required="true" autocomplete="tel" />
+                    </div>
+                  </div>
+
+                  <div class="form-group" style="margin-top:var(--space-lg);">
+                    <label for="preferred_contact" class="form-label">Preferred Contact Method</label>
+                    <select id="preferred_contact" name="preferred_contact" class="form-select">
+                      <option value="email">Email</option>
+                      <option value="phone-call">Phone Call</option>
+                      <option value="text">Text Message</option>
+                      <option value="any">Any — Fastest Available</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" style="margin-top:var(--space-lg);">
+                    <label for="how_found" class="form-label">How did you hear about us?</label>
+                    <select id="how_found" name="how_found" class="form-select">
+                      <option value="" disabled selected>Select one...</option>
+                      <option value="google">Google / Search Engine</option>
+                      <option value="referral">Referral from a colleague</option>
+                      <option value="existing-client">Existing client referral</option>
+                      <option value="social-media">Social Media</option>
+                      <option value="general-contractor">General Contractor</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="nav-buttons">
+                    <button type="button" class="btn btn--ghost" data-prev>
+                      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back
+                    </button>
+                    <button type="button" class="btn btn--primary btn--lg" data-next>
+                      Review Quote Request <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- ────────────────── STEP 5: REVIEW & SUBMIT ────────────── -->
+                <div class="form-step" id="step-5" aria-label="Step 5: Review and Submit">
+                  <h3 style="margin-bottom:var(--space-sm);">Review Your Quote Request</h3>
+                  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin-bottom:var(--space-xl);">
+                    Please confirm your information before submitting. A specialist will contact you within 2 business hours.
+                  </p>
+
+                  <!-- Review Summary -->
+                  <div class="card" style="padding:var(--space-xl);margin-bottom:var(--space-xl);">
+                    <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:var(--space-lg);">Project Summary</div>
+                    <div id="review-summary" role="list" aria-label="Review summary">
+                      <!-- Populated by JS -->
+                    </div>
+                  </div>
+
+                  <!-- Final notes -->
+                  <div class="form-group">
+                    <label for="additional_notes" class="form-label">Additional Notes or Special Requests</label>
+                    <textarea
+                      id="additional_notes"
+                      name="additional_notes"
+                      class="form-textarea"
+                      rows="3"
+                      placeholder="Any final information you'd like to include — access requirements, preferred callback times, urgent flags, or specific questions for our specialist..."
+                    ></textarea>
+                  </div>
+
+                  <!-- Consent -->
+                  <div style="margin-top:var(--space-xl);padding:var(--space-lg);background:var(--color-bg-glass-light);border:1px solid var(--color-border);border-radius:var(--radius-md);">
+                    <label style="display:flex;align-items:flex-start;gap:var(--space-md);cursor:pointer;">
+                      <input type="checkbox" id="consent" name="consent" required style="margin-top:3px;accent-color:var(--color-primary);flex-shrink:0;" aria-required="true" />
+                      <span style="font-size:0.82rem;color:var(--color-text-secondary);line-height:1.6;">
+                        I agree to be contacted by Sparkling Facility Solutions regarding my quote request. 
+                        I understand this is not a commitment and I can request removal from communication 
+                        at any time. We will never sell or share your information.
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="nav-buttons">
+                    <button type="button" class="btn btn--ghost" data-prev>
+                      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back
+                    </button>
+                    <button type="submit" class="btn btn--primary btn--lg" id="submit-btn" style="min-width:220px;">
+                      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                      Submit My Quote Request
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+
+              <!-- Success State -->
+              <div id="quote-success" role="status" aria-live="polite">
+                <div class="success-icon" aria-hidden="true">✓</div>
+                <h2 style="margin-bottom:var(--space-md);">Quote Request Submitted!</h2>
+                <p style="color:var(--color-text-secondary);max-width:480px;margin:0 auto var(--space-xl);line-height:1.8;">
+                  Thank you! Your request has been received by our team. A senior Sparkling Facility Solutions 
+                  specialist will review your project scope and contact you with a tailored proposal within 
+                  <strong style="color:var(--color-primary);">2 business hours</strong>.
+                </p>
+
+                <div class="next-steps" aria-label="What happens next">
+                  <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:var(--space-md);">What Happens Next</div>
+                  <div class="next-step-item">
+                    <span>1.</span>
+                    <span>Our specialist reviews your submitted scope and uploaded documents</span>
+                  </div>
+                  <div class="next-step-item">
+                    <span>2.</span>
+                    <span>We prepare a customized, itemized cleaning proposal for your facility</span>
+                  </div>
+                  <div class="next-step-item">
+                    <span>3.</span>
+                    <span>A specialist contacts you to confirm scope details and answer any questions</span>
+                  </div>
+                  <div class="next-step-item">
+                    <span>4.</span>
+                    <span>We deliver your written proposal and schedule a site walkthrough if needed</span>
+                  </div>
+                </div>
+
+                <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;">
+                  <a href="index.html" class="btn btn--outline">Return to Homepage</a>
+                  <a href="tel:3054346070" class="btn btn--ghost">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i> (305) 434-6070
+                  </a>
+                </div>
+              </div>
+
+            </div><!-- /card -->
+          </div><!-- /main form -->
+
+          <!-- SIDEBAR -->
+          <aside class="quote-sidebar" aria-label="Quote request information sidebar">
+
+            <!-- What to Expect -->
+            <div class="card mb-lg">
+              <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:var(--space-lg);">What to Expect</div>
+              <div class="trust-list" role="list">
+                <div class="trust-list__item" role="listitem">
+                  <div class="trust-list__icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                  <div>
+                    <div class="trust-list__title">2-Hour Response Guarantee</div>
+                    <div class="trust-list__desc">A senior specialist responds to every submitted quote within 2 business hours — no automated replies.</div>
+                  </div>
+                </div>
+                <div class="trust-list__item" role="listitem">
+                  <div class="trust-list__icon" aria-hidden="true"><i class="fa-solid fa-file-invoice"></i></div>
+                  <div>
+                    <div class="trust-list__title">Itemized Proposal</div>
+                    <div class="trust-list__desc">Every proposal is line-itemed and transparent — no hidden fees or vague estimates.</div>
+                  </div>
+                </div>
+                <div class="trust-list__item" role="listitem">
+                  <div class="trust-list__icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div>
+                  <div>
+                    <div class="trust-list__title">No Pressure. No Commitment.</div>
+                    <div class="trust-list__desc">Getting a quote is entirely free and does not obligate you to any contract.</div>
+                  </div>
+                </div>
+                <div class="trust-list__item" role="listitem">
+                  <div class="trust-list__icon" aria-hidden="true"><i class="fa-solid fa-map-location-dot"></i></div>
+                  <div>
+                    <div class="trust-list__title">Site Walkthrough Available</div>
+                    <div class="trust-list__desc">For complex projects, we offer in-person or virtual walkthroughs to confirm scope before pricing.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Contact -->
+            <div class="card mb-lg" style="background:linear-gradient(135deg,rgba(0,71,255,0.12),rgba(0,212,255,0.06));border-color:var(--color-border-strong);">
+              <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:var(--space-lg);">Prefer to Call?</div>
+              <p style="font-size:0.85rem;color:var(--color-text-secondary);margin-bottom:var(--space-lg);line-height:1.6;">
+                Our team is available Monday–Friday, 7AM–6PM EST. For urgent post-construction projects, 
+                we accept calls after hours.
+              </p>
+              <a href="tel:3054346070" class="btn btn--primary w-full" style="justify-content:center;margin-bottom:var(--space-md);">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                (305) 434-6070
+              </a>
+              <a href="mailto:info@sparklingfacilitysolutions.com" class="btn btn--ghost w-full" style="justify-content:center;">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                Send an Email
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="card">
+              <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:var(--space-lg);">Our Credentials</div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-sm);" role="list" aria-label="Company credentials">
+                <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                  <i class="fa-solid fa-shield-halved" style="color:var(--color-primary);width:16px;" aria-hidden="true"></i>
+                  Licensed &amp; Fully Insured
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                  <i class="fa-solid fa-file-contract" style="color:var(--color-primary);width:16px;" aria-hidden="true"></i>
+                  COI Provided on Request
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                  <i class="fa-solid fa-hard-hat" style="color:var(--color-primary);width:16px;" aria-hidden="true"></i>
+                  OSHA Safety Trained
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                  <i class="fa-solid fa-users-gear" style="color:var(--color-primary);width:16px;" aria-hidden="true"></i>
+                  Background-Checked Crews
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                  <i class="fa-solid fa-star" style="color:var(--color-primary);width:16px;" aria-hidden="true"></i>
+                  100% Satisfaction Guaranteed
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                  <i class="fa-solid fa-map-location-dot" style="color:var(--color-primary);width:16px;" aria-hidden="true"></i>
+                  All Florida Regions Served
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <!-- No AI widget on quote page to avoid distraction -->
+
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <script>
+  /* ── Quote Page Logic ──────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', () => {
+    const steps = document.querySelectorAll('.form-step');
+    const indicators = document.querySelectorAll('.step-indicator__step');
+    let currentStep = 0;
+    const formData = {};
+
+    // File upload handlers
+    initFileUploadZone('floor-plan-zone', 'floor-plan-input', 'floor-plan-list');
+    initFileUploadZone('scope-zone', 'scope-input', 'scope-list');
+    initFileUploadZone('photos-zone', 'photos-input', 'photos-list');
+
+    function initFileUploadZone(zoneId, inputId, listId) {
+      const zone = document.getElementById(zoneId);
+      const input = document.getElementById(inputId);
+      const list = document.getElementById(listId);
+      if (!zone || !input || !list) return;
+
+      let files = [];
+
+      const formatSize = (b) => b < 1024*1024 ? (b/1024).toFixed(1)+' KB' : (b/(1024*1024)).toFixed(1)+' MB';
+
+      const getIcon = (name) => {
+        const ext = name.split('.').pop().toLowerCase();
+        const m = {pdf:'fa-file-pdf',doc:'fa-file-word',docx:'fa-file-word',xls:'fa-file-excel',xlsx:'fa-file-excel',dwg:'fa-drafting-compass',dxf:'fa-drafting-compass',jpg:'fa-file-image',jpeg:'fa-file-image',png:'fa-file-image',heic:'fa-file-image',webp:'fa-file-image',tif:'fa-file-image',tiff:'fa-file-image'};
+        return `fa-solid ${m[ext]||'fa-file'}`;
+      };
+
+      const render = () => {
+        list.innerHTML = '';
+        files.forEach((f, i) => {
+          const el = document.createElement('div');
+          el.className = 'file-item';
+          el.innerHTML = `
+            <i class="${getIcon(f.name)} file-item__icon" aria-hidden="true"></i>
+            <span class="file-item__name">${f.name}</span>
+            <span class="file-item__size">${formatSize(f.size)}</span>
+            <button type="button" class="file-item__remove" data-i="${i}" aria-label="Remove ${f.name}"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+          `;
+          list.appendChild(el);
+        });
+        list.querySelectorAll('.file-item__remove').forEach(btn => {
+          btn.addEventListener('click', () => { files.splice(+btn.dataset.i,1); render(); });
+        });
+      };
+
+      const add = (newFiles) => {
+        Array.from(newFiles).forEach(f => {
+          if (f.size > 50*1024*1024) { showToastMsg(`${f.name} too large (max 50MB)`); return; }
+          if (files.length >= 10) { showToastMsg('Maximum 10 files per section'); return; }
+          if (!files.find(x => x.name === f.name && x.size === f.size)) files.push(f);
+        });
+        render();
+      };
+
+      zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('drag-over'); });
+      zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+      zone.addEventListener('drop', e => { e.preventDefault(); zone.classList.remove('drag-over'); add(e.dataTransfer.files); });
+      input.addEventListener('change', () => { add(input.files); input.value=''; });
+      zone.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') input.click(); });
+    }
+
+    function showToastMsg(msg) {
+      const t = document.createElement('div');
+      t.className = 'toast toast--error show';
+      t.innerHTML = `<i class="fa-solid fa-circle-exclamation toast__icon" aria-hidden="true"></i><span class="toast__text">${msg}</span>`;
+      document.body.appendChild(t);
+      setTimeout(() => t.remove(), 3500);
+    }
+
+    // Option cards selection
+    document.querySelectorAll('.option-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.closest('.option-cards').querySelectorAll('.option-card').forEach(c => {
+          c.classList.remove('selected');
+          c.setAttribute('aria-checked', 'false');
+        });
+        card.classList.add('selected');
+        card.setAttribute('aria-checked', 'true');
+        const input = card.querySelector('input[type="radio"]');
+        if (input) input.checked = true;
+
+        // AI recommendation
+        const service = input ? input.value : '';
+        const recs = {
+          'post-construction': 'For post-construction projects, I recommend uploading your floor plans in Step 3 — this allows us to price per-phase (rough, final, touch-up) and eliminate back-and-forth on scope.',
+          'janitorial': 'Ongoing janitorial contracts are our most popular service. After Step 3, our specialist will build a custom frequency schedule based on your building type and traffic patterns.',
+          'turnover': 'Turnover cleaning is available with 48-hour mobilization across all Florida markets. Note your timeline carefully in Step 2 for fastest service.',
+          'floor-care': 'Floor care is priced per square foot based on floor type. Uploading a floor plan helps us accurately identify VCT, carpet, tile, and specialty floor areas.',
+          'day-porter': 'Day porter programs are priced hourly. Our specialist will build a coverage schedule based on your peak hours, traffic zones, and specific requirements.',
+          'multiple': 'For bundled services, we offer multi-service discount packages. Describe your full scope in Step 2 and we will build a comprehensive proposal.'
+        };
+        const rec = recs[service];
+        if (rec) {
+          document.getElementById('ai-rec').style.display = 'flex';
+          document.getElementById('ai-rec-text').textContent = rec;
+        }
+      });
+
+      card.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') card.click(); });
+    });
+
+    // Step navigation
+    const showStep = (n) => {
+      steps.forEach((s, i) => {
+        s.classList.toggle('active', i === n);
+        s.style.display = i === n ? 'block' : 'none';
+      });
+      indicators.forEach((ind, i) => {
+        ind.classList.remove('active','completed');
+        if (i < n) ind.classList.add('completed');
+        if (i === n) ind.classList.add('active');
+      });
+      window.scrollTo({ top: document.getElementById('quote-form-container').offsetTop - 100, behavior: 'smooth' });
+    };
+
+    document.querySelectorAll('[data-next]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Step 1 validation: must select a service
+        if (currentStep === 0) {
+          const selected = document.querySelector('input[name="service_type"]:checked');
+          if (!selected) { showToastMsg('Please select a service type to continue'); return; }
+        }
+
+        // Step 2 validation
+        if (currentStep === 1) {
+          const req = document.querySelectorAll('#step-2 [required]');
+          let valid = true;
+          req.forEach(f => {
+            if (!f.value.trim()) { f.style.borderColor = '#ff4444'; valid = false; }
+            else f.style.borderColor = '';
+          });
+          if (!valid) { showToastMsg('Please fill in all required fields'); return; }
+        }
+
+        // Step 4 validation
+        if (currentStep === 3) {
+          const req = document.querySelectorAll('#step-4 [required]');
+          let valid = true;
+          req.forEach(f => {
+            if (!f.value.trim()) { f.style.borderColor = '#ff4444'; valid = false; }
+            else f.style.borderColor = '';
+          });
+          if (!valid) { showToastMsg('Please fill in all required fields'); return; }
+
+          // Populate review
+          buildReview();
+        }
+
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-prev]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (currentStep > 0) { currentStep--; showStep(currentStep); }
+      });
+    });
+
+    const buildReview = () => {
+      const summary = document.getElementById('review-summary');
+      if (!summary) return;
+
+      const get = (id) => {
+        const el = document.getElementById(id);
+        if (!el) return '—';
+        if (el.tagName === 'SELECT') return el.options[el.selectedIndex]?.text || '—';
+        return el.value || '—';
+      };
+
+      const serviceType = document.querySelector('input[name="service_type"]:checked')?.value || '—';
+      const serviceLabels = {
+        'post-construction': 'Post-Construction Cleaning',
+        'janitorial': 'Ongoing Janitorial Program',
+        'turnover': 'Turnover / Move-In Ready',
+        'floor-care': 'Floor Care & Polishing',
+        'day-porter': 'Day Porter Services',
+        'multiple': 'Multiple / Bundled Services'
+      };
+
+      const items = [
+        ['Service Type', serviceLabels[serviceType] || serviceType],
+        ['Facility Type', get('facility_type')],
+        ['Square Footage', get('square_footage')],
+        ['Service Frequency', get('service_frequency')],
+        ['Florida Region', get('service_region')],
+        ['Timeline', get('timeline')],
+        ['Contact Name', `${get('first_name')} ${get('last_name')}`],
+        ['Company', get('company_name')],
+        ['Role', get('job_title')],
+        ['Email', get('email')],
+        ['Phone', get('phone')]
+      ];
+
+      summary.innerHTML = items.map(([label, val]) => `
+        <div class="review-item" role="listitem">
+          <span class="review-item__label">${label}</span>
+          <span class="review-item__value">${val}</span>
+        </div>
+      `).join('');
+    };
+
+    // Form submission
+    document.getElementById('quote-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const consent = document.getElementById('consent');
+      if (!consent.checked) {
+        showToastMsg('Please agree to the consent statement to submit');
+        return;
+      }
+
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Submitting...';
+      submitBtn.disabled = true;
+
+      // Collect all form data
+      const data = {
+        service_type: document.querySelector('input[name="service_type"]:checked')?.value || '',
+        facility_type: document.getElementById('facility_type')?.value || '',
+        square_footage: document.getElementById('square_footage')?.value || '',
+        service_frequency: document.getElementById('service_frequency')?.value || '',
+        service_region: document.getElementById('service_region')?.value || '',
+        timeline: document.getElementById('timeline')?.value || '',
+        num_buildings: document.getElementById('num_buildings')?.value || '',
+        project_description: document.getElementById('project_description')?.value || '',
+        first_name: document.getElementById('first_name')?.value || '',
+        last_name: document.getElementById('last_name')?.value || '',
+        company_name: document.getElementById('company_name')?.value || '',
+        job_title: document.getElementById('job_title')?.value || '',
+        email: document.getElementById('email')?.value || '',
+        phone: document.getElementById('phone')?.value || '',
+        preferred_contact: document.getElementById('preferred_contact')?.value || '',
+        how_found: document.getElementById('how_found')?.value || '',
+        additional_notes: document.getElementById('additional_notes')?.value || '',
+        source: 'Quote Form',
+        submitted_at: new Date().toISOString()
+      };
+
+      try {
+        await fetch('tables/quote_requests', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+      } catch(err) {
+        // Continue to success even if DB fails
+      }
+
+      // Show success
+      document.getElementById('step-indicator').style.display = 'none';
+      document.getElementById('quote-form').style.display = 'none';
+      const success = document.getElementById('quote-success');
+      success.classList.add('show');
+    });
+
+    // URL param pre-selection
+    const params = new URLSearchParams(window.location.search);
+    const preService = params.get('service');
+    const preIndustry = params.get('industry');
+
+    if (preService) {
+      const radio = document.querySelector(`input[name="service_type"][value="${preService}"]`);
+      if (radio) {
+        radio.closest('.option-card')?.click();
+      }
+    }
+
+    // Init step display
+    showStep(0);
+  });
+  </script>
+</body>
+</html>

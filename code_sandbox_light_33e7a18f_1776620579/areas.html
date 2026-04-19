@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florida Service Areas | Commercial Cleaning Statewide | Sparkling Facility Solutions</title>
+  <meta name="description" content="Sparkling Facility Solutions provides commercial cleaning, post-construction cleaning, and facility janitorial services across all major Florida markets including Miami, Tampa, Orlando, Jacksonville, Fort Lauderdale, Naples, and the Florida Keys." />
+  <meta name="keywords" content="commercial cleaning Miami FL, commercial cleaning Tampa FL, post construction cleaning Orlando FL, facility cleaning Jacksonville FL, commercial cleaning Fort Lauderdale, facility services Naples FL, cleaning service Florida Keys" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sparklingfacilitysolutions.com/areas.html" />
+  <meta property="og:title" content="Florida Service Areas | Sparkling Facility Solutions" />
+  <meta property="og:description" content="Commercial cleaning across all major Florida markets. Miami, Tampa, Orlando, Jacksonville, and more. Statewide coverage for contractors and facility managers." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
+
+  <style>
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+    }
+    .area-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      transition: all var(--transition-slow);
+      position: relative;
+      overflow: hidden;
+    }
+    .area-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition-slow);
+    }
+    .area-card:hover { transform: translateY(-4px); border-color: var(--color-border-strong); box-shadow: var(--shadow-card-hover); }
+    .area-card:hover::before { transform: scaleX(1); }
+    .area-card__region { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-primary); margin-bottom: var(--space-sm); }
+    .area-card__title { font-size: 1.1rem; font-weight: 700; margin-bottom: var(--space-sm); }
+    .area-card__counties { font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: var(--space-md); line-height: 1.6; }
+    .area-card__services { display: flex; flex-direction: column; gap: 4px; margin-bottom: var(--space-lg); }
+    .area-card__service { font-size: 0.78rem; color: var(--color-text-secondary); display: flex; align-items: center; gap: 6px; }
+    .area-card__service::before { content: '→'; color: var(--color-primary); font-size: 0.7rem; }
+    .area-card__cta { font-size: 0.8rem; font-weight: 600; color: var(--color-primary); display: inline-flex; align-items: center; gap: 6px; }
+
+    .florida-map {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-xl);
+      padding: var(--space-4xl);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .florida-map::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(0,71,255,0.08) 0%, transparent 70%);
+    }
+    .florida-outline {
+      font-size: 8rem;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+    }
+    .coverage-badge {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 0.5rem 1.25rem;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: var(--space-lg);
+      box-shadow: 0 4px 20px rgba(0,212,255,0.3);
+    }
+
+    @media (max-width: 900px) { .areas-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .areas-grid { grid-template-columns: 1fr; } }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  </style>
+
+  <!-- Local SEO Structured Data per region -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Sparkling Facility Solutions LLC",
+    "areaServed": [
+      {"@type": "City", "name": "Miami", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "Fort Lauderdale", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "Tampa", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "Orlando", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "Jacksonville", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "West Palm Beach", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "Naples", "containedInPlace": {"@type": "State", "name": "Florida"}},
+      {"@type": "City", "name": "Key West", "containedInPlace": {"@type": "State", "name": "Florida"}}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a href="#main-content" class="sr-only" style="position:absolute;z-index:9999;padding:8px 16px;background:var(--color-primary);color:#000;font-weight:700;border-radius:4px;">Skip to Main Content</a>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="areas-title">
+      <div class="container page-hero__inner text-center">
+        <div class="section-label fade-in" style="justify-content:center;">Florida-Wide Coverage</div>
+        <h1 class="fade-in" id="areas-title" style="margin-bottom:var(--space-lg);">
+          Commercial Cleaning<br />
+          <em style="font-style:normal;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Across All of Florida</em>
+        </h1>
+        <p class="section-subtitle fade-in" style="margin:0 auto var(--space-xl);">
+          From Miami to Jacksonville, from Tampa Bay to the Florida Keys — Sparkling Facility Solutions 
+          deploys professional cleaning crews to all major Florida markets. 
+          Multi-location contracts and statewide programs available.
+        </p>
+      </div>
+    </section>
+
+    <!-- Map Visual -->
+    <section class="section--sm" style="background:var(--color-bg-dark);border-bottom:1px solid var(--color-border);" aria-label="Florida statewide coverage">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3xl);align-items:center;" class="map-layout">
+          <div class="florida-map fade-in" aria-label="Florida map illustration">
+            <div class="florida-outline" aria-hidden="true">🌴</div>
+            <div style="font-size:1.1rem;font-weight:700;margin-top:var(--space-lg);position:relative;z-index:1;">State of Florida</div>
+            <div style="font-size:0.8rem;color:var(--color-text-muted);position:relative;z-index:1;">Full Commercial Coverage</div>
+            <div class="coverage-badge" aria-label="All major Florida markets covered">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              15+ Markets Covered
+            </div>
+          </div>
+          <div class="fade-in-right">
+            <h2 style="margin-bottom:var(--space-xl);">Statewide Capability.<br /><span class="gradient-text">Local Expertise.</span></h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              We maintain active cleaning operations across Florida's major construction and commercial 
+              markets. For multi-site contracts spanning multiple regions, we coordinate dedicated 
+              regional crews under centralized account management.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:var(--space-md);" role="list" aria-label="Statewide service capabilities">
+              <div style="display:flex;align-items:center;gap:var(--space-md);" role="listitem">
+                <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,212,255,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-primary);flex-shrink:0;" aria-hidden="true"><i class="fa-solid fa-building"></i></div>
+                <div style="font-size:0.875rem;color:var(--color-text-secondary);">Single contract coverage across multiple Florida locations</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:var(--space-md);" role="listitem">
+                <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,212,255,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-primary);flex-shrink:0;" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                <div style="font-size:0.875rem;color:var(--color-text-secondary);">Single point of contact for all regions — one call handles it all</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:var(--space-md);" role="listitem">
+                <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,212,255,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-primary);flex-shrink:0;" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+                <div style="font-size:0.875rem;color:var(--color-text-secondary);">Emergency mobilization available in all primary markets</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:var(--space-md);" role="listitem">
+                <div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(0,212,255,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-primary);flex-shrink:0;" aria-hidden="true"><i class="fa-solid fa-tag"></i></div>
+                <div style="font-size:0.875rem;color:var(--color-text-secondary);">Volume discounts for multi-location and statewide contracts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas Grid -->
+    <section class="section" aria-labelledby="areas-grid-heading">
+      <div class="container">
+        <div class="text-center mb-2xl fade-in">
+          <div class="section-label">All Service Regions</div>
+          <h2 class="section-title" id="areas-grid-heading">Find Your <span>Florida Market</span></h2>
+        </div>
+
+        <div class="areas-grid stagger" role="list" aria-label="Florida service areas">
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">South Florida</div>
+            <h3 class="area-card__title">Miami / Miami-Dade</h3>
+            <div class="area-card__counties">Miami-Dade County · Brickell · Downtown Miami · Doral · Coral Gables · Hialeah · Aventura</div>
+            <ul class="area-card__services" aria-label="Available services in Miami">
+              <li class="area-card__service">Post-construction cleaning</li>
+              <li class="area-card__service">Office &amp; facility janitorial</li>
+              <li class="area-card__service">Medical facility cleaning</li>
+              <li class="area-card__service">High-rise &amp; mixed-use</li>
+            </ul>
+            <a href="quote.html?service=post-construction&amp;region=miami" class="area-card__cta">
+              Get Quote for Miami <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">South Florida</div>
+            <h3 class="area-card__title">Fort Lauderdale / Broward</h3>
+            <div class="area-card__counties">Broward County · Fort Lauderdale · Pompano Beach · Hollywood · Miramar · Pembroke Pines · Sunrise</div>
+            <ul class="area-card__services" aria-label="Available services in Fort Lauderdale">
+              <li class="area-card__service">Post-construction final cleans</li>
+              <li class="area-card__service">Commercial janitorial programs</li>
+              <li class="area-card__service">Retail &amp; commercial centers</li>
+              <li class="area-card__service">Floor care &amp; pressure washing</li>
+            </ul>
+            <a href="quote.html?region=fort-lauderdale" class="area-card__cta">
+              Get Quote for Broward <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">South Florida</div>
+            <h3 class="area-card__title">West Palm Beach / Palm Beach</h3>
+            <div class="area-card__counties">Palm Beach County · West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Wellington</div>
+            <ul class="area-card__services" aria-label="Available services in West Palm Beach">
+              <li class="area-card__service">Construction handoff cleaning</li>
+              <li class="area-card__service">Corporate facility programs</li>
+              <li class="area-card__service">Property management cleaning</li>
+              <li class="area-card__service">HOA &amp; community spaces</li>
+            </ul>
+            <a href="quote.html?region=west-palm" class="area-card__cta">
+              Get Quote for Palm Beach <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">Southwest Florida</div>
+            <h3 class="area-card__title">Naples / Fort Myers / SWFL</h3>
+            <div class="area-card__counties">Collier County · Lee County · Naples · Fort Myers · Cape Coral · Bonita Springs · Marco Island</div>
+            <ul class="area-card__services" aria-label="Available services in Naples Fort Myers">
+              <li class="area-card__service">Post-construction luxury clean</li>
+              <li class="area-card__service">High-end commercial facilities</li>
+              <li class="area-card__service">Resort &amp; hospitality support</li>
+              <li class="area-card__service">Turnover cleaning</li>
+            </ul>
+            <a href="quote.html?region=naples-fortmyers" class="area-card__cta">
+              Get Quote for SWFL <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">Florida Keys</div>
+            <h3 class="area-card__title">Key West / Florida Keys</h3>
+            <div class="area-card__counties">Monroe County · Key West · Marathon · Key Largo · Big Pine Key · Islamorada</div>
+            <ul class="area-card__services" aria-label="Available services in Florida Keys">
+              <li class="area-card__service">Post-construction final cleans</li>
+              <li class="area-card__service">Commercial &amp; hospitality cleaning</li>
+              <li class="area-card__service">Property management</li>
+              <li class="area-card__service">Marine-area facility care</li>
+            </ul>
+            <a href="quote.html?region=key-west" class="area-card__cta">
+              Get Quote for the Keys <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">Tampa Bay Area</div>
+            <h3 class="area-card__title">Tampa / St. Petersburg</h3>
+            <div class="area-card__counties">Hillsborough · Pinellas County · Tampa · St. Petersburg · Clearwater · Brandon · Wesley Chapel · Sarasota</div>
+            <ul class="area-card__services" aria-label="Available services in Tampa">
+              <li class="area-card__service">Post-construction office cleans</li>
+              <li class="area-card__service">Warehouse &amp; industrial cleaning</li>
+              <li class="area-card__service">Medical facility support</li>
+              <li class="area-card__service">Commercial janitorial programs</li>
+            </ul>
+            <a href="quote.html?region=tampa" class="area-card__cta">
+              Get Quote for Tampa Bay <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">Central Florida</div>
+            <h3 class="area-card__title">Orlando / Central FL</h3>
+            <div class="area-card__counties">Orange · Osceola · Seminole · Polk County · Orlando · Kissimmee · Sanford · Lakeland · Winter Garden</div>
+            <ul class="area-card__services" aria-label="Available services in Orlando">
+              <li class="area-card__service">Theme park &amp; hospitality support</li>
+              <li class="area-card__service">Post-construction cleans</li>
+              <li class="area-card__service">Office &amp; industrial facilities</li>
+              <li class="area-card__service">Retail center maintenance</li>
+            </ul>
+            <a href="quote.html?region=orlando" class="area-card__cta">
+              Get Quote for Orlando <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" role="listitem">
+            <div class="area-card__region">Northeast Florida</div>
+            <h3 class="area-card__title">Jacksonville / Northeast FL</h3>
+            <div class="area-card__counties">Duval · St. Johns · Clay County · Jacksonville · St. Augustine · Orange Park · Fleming Island</div>
+            <ul class="area-card__services" aria-label="Available services in Jacksonville">
+              <li class="area-card__service">Post-construction industrial cleans</li>
+              <li class="area-card__service">Commercial janitorial</li>
+              <li class="area-card__service">Port &amp; logistics facility support</li>
+              <li class="area-card__service">Corporate office programs</li>
+            </ul>
+            <a href="quote.html?region=jacksonville" class="area-card__cta">
+              Get Quote for Jacksonville <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="area-card fade-in" style="background:linear-gradient(135deg,rgba(0,71,255,0.08),rgba(0,212,255,0.04));border-color:var(--color-border-strong);" role="listitem">
+            <div class="area-card__region">Statewide</div>
+            <h3 class="area-card__title">Multi-Location / Statewide</h3>
+            <div class="area-card__counties">All Florida regions · Single-vendor contracts · Volume pricing · Centralized management</div>
+            <ul class="area-card__services" aria-label="Statewide services">
+              <li class="area-card__service">Property portfolio cleaning programs</li>
+              <li class="area-card__service">Multi-site janitorial contracts</li>
+              <li class="area-card__service">Developer &amp; GC preferred vendor</li>
+              <li class="area-card__service">Volume discount pricing available</li>
+            </ul>
+            <a href="quote.html?region=statewide" class="area-card__cta">
+              Get Statewide Quote <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section--sm" aria-labelledby="areas-cta-heading">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 class="cta-banner__title" id="areas-cta-heading">
+            Don't See Your City?<br /><span class="gradient-text">Contact Us — We Likely Cover It.</span>
+          </h2>
+          <p class="cta-banner__subtitle">We operate across all of Florida. If your city isn't listed, reach out — our team will confirm coverage and mobilization options for your area.</p>
+          <div class="cta-banner__actions">
+            <a href="quote.html" class="btn btn--primary btn--lg">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Get a Free Quote
+            </a>
+            <a href="tel:3054346070" class="btn btn--ghost btn--lg">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> (305) 434-6070
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="ai-widget-placeholder"></div>
+
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mapLayout = document.querySelector('.map-layout');
+      if (mapLayout && window.innerWidth <= 900) {
+        mapLayout.style.gridTemplateColumns = '1fr';
+      }
+    });
+  </script>
+</body>
+</html>

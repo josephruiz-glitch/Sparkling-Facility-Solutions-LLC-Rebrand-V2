@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Sparkling Facility Solutions | Florida Commercial Cleaning & Post-Construction Specialists</title>
+  <meta name="description" content="Florida's premier B2B commercial cleaning company. Specializing in post-construction cleaning, facility janitorial, and turnover services for contractors, property managers, and corporate facilities statewide. Fast quotes. Licensed & insured." />
+  <meta name="keywords" content="commercial cleaning Florida, post construction cleaning Florida, facility cleaning services, janitorial services Florida, B2B commercial cleaning, building cleaning contractor, property management cleaning, office cleaning Florida, Miami commercial cleaning, Tampa facility services" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Sparkling Facility Solutions LLC" />
+  <link rel="canonical" href="https://www.sparklingfacilitysolutions.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sparklingfacilitysolutions.com/" />
+  <meta property="og:title" content="Sparkling Facility Solutions | Florida Commercial Cleaning Experts" />
+  <meta property="og:description" content="Post-construction cleaning, facility janitorial, and turnover services across Florida. Trusted by contractors and property managers. Get a free quote today." />
+  <meta property="og:image" content="https://www.sparklingfacilitysolutions.com/images/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Sparkling Facility Solutions" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sparkling Facility Solutions | Florida Commercial Cleaning" />
+  <meta name="twitter:description" content="Florida's B2B commercial cleaning partner. Post-construction, janitorial, and facility services statewide." />
+
+  <!-- Geo / Local SEO -->
+  <meta name="geo.region" content="US-FL" />
+  <meta name="geo.placename" content="Florida" />
+  <meta name="geo.position" content="24.5551;-81.7800" />
+  <meta name="ICBM" content="24.5551, -81.7800" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.sparklingfacilitysolutions.com/#business",
+    "name": "Sparkling Facility Solutions LLC",
+    "alternateName": "Sparkling Facility Solutions",
+    "description": "Florida's premier commercial cleaning company specializing in post-construction cleaning, facility janitorial services, and turnover cleaning for contractors, property managers, and corporate facilities.",
+    "url": "https://www.sparklingfacilitysolutions.com",
+    "telephone": "+1-305-434-6070",
+    "email": "info@sparklingfacilitysolutions.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1544 5th St",
+      "addressLocality": "Key West",
+      "addressRegion": "FL",
+      "postalCode": "33040",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Florida"
+    },
+    "serviceType": ["Post-Construction Cleaning", "Commercial Janitorial", "Facility Maintenance", "Turnover Cleaning", "Floor Care"],
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Commercial Cleaning Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Post-Construction Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facility Janitorial Services"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Turnover Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Floor Care & Polishing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Day Porter Services"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/design-system.css" />
+
+  <style>
+    /* Page-specific overrides */
+    .hero-home { background: var(--color-bg-darkest); }
+
+    /* Marquee scrolling trust logos */
+    .marquee-wrap {
+      overflow: hidden;
+      padding: var(--space-md) 0;
+      mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+    }
+    .marquee-track {
+      display: flex;
+      gap: var(--space-3xl);
+      animation: marquee 30s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+    .marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .marquee-item i { color: var(--color-primary); }
+
+    /* Feature highlight */
+    .feature-highlight {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4xl);
+      align-items: center;
+    }
+    .feature-highlight.reverse { direction: rtl; }
+    .feature-highlight.reverse > * { direction: ltr; }
+
+    .feature-visual {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-visual__bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,71,255,0.1) 0%, rgba(0,212,255,0.05) 100%);
+    }
+
+    .feature-visual__grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .feature-checklist {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+
+    .feature-check {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+    }
+
+    .feature-check__icon {
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: rgba(0,255,179,0.15);
+      border: 1px solid rgba(0,255,179,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.6rem;
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .feature-check__text {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .feature-check__text strong {
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+    /* Floating cards in visual */
+    .float-card {
+      position: absolute;
+      background: var(--color-bg-glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-md);
+      padding: 0.875rem 1.125rem;
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: 0.8rem;
+      z-index: 1;
+      white-space: nowrap;
+    }
+    .float-card__icon { color: var(--color-primary); font-size: 1rem; }
+    .float-card__title { font-weight: 700; color: var(--color-text-primary); }
+    .float-card__sub { font-size: 0.7rem; color: var(--color-text-muted); }
+
+    .float-card--1 { top: 20%; right: -10%; animation: floatUp 5s ease-in-out infinite; }
+    .float-card--2 { bottom: 20%; left: -8%; animation: floatUp 7s ease-in-out infinite reverse; }
+    .float-card--3 { top: 10%; left: 10%; animation: floatUp 6s ease-in-out infinite 1s; }
+
+    @keyframes floatUp {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Center icon in visual */
+    .visual-center-icon {
+      width: 120px; height: 120px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(0,71,255,0.2), rgba(0,212,255,0.1));
+      border: 1px solid rgba(0,212,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Why Choose Us tabs */
+    .tabs-nav {
+      display: flex;
+      gap: var(--space-sm);
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: var(--space-2xl);
+      overflow-x: auto;
+      padding-bottom: 0;
+    }
+
+    .tab-btn {
+      padding: 0.75rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      border: 1px solid transparent;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+      margin-bottom: -1px;
+    }
+
+    .tab-btn:hover { color: var(--color-text-primary); background: var(--color-bg-glass-light); }
+
+    .tab-btn.active {
+      color: var(--color-primary);
+      border-color: var(--color-border) var(--color-border) var(--color-bg-darkest);
+      background: var(--color-bg-darkest);
+      border-bottom-color: var(--color-bg-darkest);
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: grid; }
+
+    @media (max-width: 900px) {
+      .feature-highlight { grid-template-columns: 1fr; }
+      .feature-highlight.reverse { direction: ltr; }
+      .float-card--1, .float-card--2 { display: none; }
+    }
+
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="sr-only" style="position:absolute;z-index:9999;padding:8px 16px;background:var(--color-primary);color:#000;font-weight:700;border-radius:4px;">
+    Skip to Main Content
+  </a>
+
+  <!-- Navigation (injected by components.js) -->
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════
+         HERO SECTION
+    ════════════════════════════════════════════════════ -->
+    <section class="hero hero-home" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <div class="hero__bg-gradient" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+        <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="hero__content">
+        <!-- Left: Copy -->
+        <div class="hero__left fade-in">
+          <div class="hero__tag" aria-label="Florida-wide commercial cleaning">
+            <span class="hero__tag-dot" aria-hidden="true"></span>
+            Florida Commercial Cleaning Specialists
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            Post-Construction &amp;<br />
+            <em>Facility Cleaning</em><br />
+            Done Right. Every Time.
+          </h1>
+
+          <p class="hero__subtitle">
+            Sparkling Facility Solutions is Florida's trusted B2B cleaning partner for general contractors, 
+            property managers, and corporate facility teams. We deliver final cleans, ongoing janitorial 
+            programs, and turnover-ready services — on deadline, on budget, statewide.
+          </p>
+
+          <div class="hero__actions">
+            <a href="quote.html" class="btn btn--primary btn--lg">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+              Get a Free Quote
+            </a>
+            <a href="services.html" class="btn btn--outline btn--lg">
+              Explore Services
+              <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="hero__trust" role="list" aria-label="Trust indicators">
+            <div class="hero__trust-item" role="listitem">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              Licensed &amp; Insured
+            </div>
+            <div class="hero__trust-item" role="listitem">
+              <i class="fa-solid fa-hard-hat" aria-hidden="true"></i>
+              OSHA Trained
+            </div>
+            <div class="hero__trust-item" role="listitem">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-Hour Quote Response
+            </div>
+            <div class="hero__trust-item" role="listitem">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              All Florida Regions
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Stats & Service Panel -->
+        <div class="hero__panel fade-in-right" aria-label="Quick overview panel">
+          <div class="hero__stats-grid" role="list" aria-label="Company statistics">
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number" data-count="500" data-suffix="+" aria-label="500 plus projects completed">500+</span>
+              <span class="hero__stat-label">Projects Completed</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number" data-count="7" data-suffix="+" aria-label="7 plus years experience">7+</span>
+              <span class="hero__stat-label">Years in Industry</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number" data-count="15" data-suffix="" aria-label="15 Florida regions served">FL-Wide</span>
+              <span class="hero__stat-label">Florida Regions</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number" data-count="100" data-suffix="%" aria-label="100 percent satisfaction guaranteed">100%</span>
+              <span class="hero__stat-label">Satisfaction Guarantee</span>
+            </div>
+          </div>
+
+          <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:0.75rem;">What We Handle</p>
+          <div class="hero__services-preview" role="list" aria-label="Core services">
+            <a href="services.html#post-construction" class="hero__service-item" role="listitem">
+              <div class="hero__service-icon" aria-hidden="true">🏗️</div>
+              <div>
+                <div class="hero__service-name">Post-Construction Cleaning</div>
+                <div class="hero__service-desc">Final cleans, rough cleans, handoff-ready spaces</div>
+              </div>
+            </a>
+            <a href="services.html#janitorial" class="hero__service-item" role="listitem">
+              <div class="hero__service-icon" aria-hidden="true">🏢</div>
+              <div>
+                <div class="hero__service-name">Facility Janitorial Programs</div>
+                <div class="hero__service-desc">Nightly, weekly &amp; monthly service contracts</div>
+              </div>
+            </a>
+            <a href="services.html#turnover" class="hero__service-item" role="listitem">
+              <div class="hero__service-icon" aria-hidden="true">🔑</div>
+              <div>
+                <div class="hero__service-name">Turnover &amp; Move-In Ready</div>
+                <div class="hero__service-desc">Fast mobilization for property managers</div>
+              </div>
+            </a>
+            <a href="services.html#floor-care" class="hero__service-item" role="listitem">
+              <div class="hero__service-icon" aria-hidden="true">✨</div>
+              <div>
+                <div class="hero__service-name">Floor Care &amp; Detailing</div>
+                <div class="hero__service-desc">Strip, wax, polish, carpet extraction</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         TRUST BAR / SCROLLING PARTNERS
+    ════════════════════════════════════════════════════ -->
+    <div class="trust-bar" aria-label="Industry credentials and trust signals">
+      <div class="container">
+        <div class="trust-bar__inner">
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            Licensed &amp; Fully Insured
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true"><i class="fa-solid fa-hard-hat"></i></div>
+            OSHA Safety Protocols
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true"><i class="fa-solid fa-user-check"></i></div>
+            Background-Checked Crews
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true"><i class="fa-solid fa-file-contract"></i></div>
+            Workers' Comp Covered
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+            Satisfaction Guaranteed
+          </div>
+          <div class="trust-bar__item">
+            <div class="trust-bar__icon" aria-hidden="true"><i class="fa-solid fa-map-location-dot"></i></div>
+            All Florida Regions
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee industry partners -->
+    <div class="marquee-wrap" aria-hidden="true" style="border-bottom:1px solid var(--color-border);background:var(--color-bg-dark);padding:var(--space-md) 0;">
+      <div class="marquee-track">
+        <!-- First set -->
+        <span class="marquee-item"><i class="fa-solid fa-building"></i> General Contractors</span>
+        <span class="marquee-item"><i class="fa-solid fa-key"></i> Property Managers</span>
+        <span class="marquee-item"><i class="fa-solid fa-hospital"></i> Medical Facilities</span>
+        <span class="marquee-item"><i class="fa-solid fa-warehouse"></i> Industrial Sites</span>
+        <span class="marquee-item"><i class="fa-solid fa-store"></i> Retail Chains</span>
+        <span class="marquee-item"><i class="fa-solid fa-school"></i> Educational Facilities</span>
+        <span class="marquee-item"><i class="fa-solid fa-hotel"></i> Hospitality</span>
+        <span class="marquee-item"><i class="fa-solid fa-building-columns"></i> Corporate Offices</span>
+        <span class="marquee-item"><i class="fa-solid fa-house-flag"></i> HOA Communities</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="marquee-item"><i class="fa-solid fa-building"></i> General Contractors</span>
+        <span class="marquee-item"><i class="fa-solid fa-key"></i> Property Managers</span>
+        <span class="marquee-item"><i class="fa-solid fa-hospital"></i> Medical Facilities</span>
+        <span class="marquee-item"><i class="fa-solid fa-warehouse"></i> Industrial Sites</span>
+        <span class="marquee-item"><i class="fa-solid fa-store"></i> Retail Chains</span>
+        <span class="marquee-item"><i class="fa-solid fa-school"></i> Educational Facilities</span>
+        <span class="marquee-item"><i class="fa-solid fa-hotel"></i> Hospitality</span>
+        <span class="marquee-item"><i class="fa-solid fa-building-columns"></i> Corporate Offices</span>
+        <span class="marquee-item"><i class="fa-solid fa-house-flag"></i> HOA Communities</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         CORE SERVICES SECTION
+    ════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="text-center mb-2xl fade-in">
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title" id="services-heading">
+            Commercial Cleaning Solutions<br />
+            <span>Built for Florida's B2B Market</span>
+          </h2>
+          <p class="section-subtitle">
+            From high-ticket post-construction handoffs to ongoing janitorial contracts, 
+            every service is designed to meet the standards of general contractors, facility managers, 
+            and corporate operations teams.
+          </p>
+        </div>
+
+        <div class="services-grid stagger" role="list" aria-label="Our core services">
+
+          <article class="service-card fade-in" id="service-postconstruction" role="listitem" aria-label="Post-Construction Cleaning service">
+            <div class="service-card__icon" aria-hidden="true">🏗️</div>
+            <h3 class="service-card__title">Post-Construction Cleaning</h3>
+            <p class="service-card__desc">
+              Full-scope final cleans, rough cleans, and touch-up cleans for new builds, 
+              renovations, and TI (tenant improvement) projects across Florida.
+            </p>
+            <ul class="service-card__features" role="list">
+              <li class="service-card__feature">Construction dust &amp; debris removal</li>
+              <li class="service-card__feature">Window &amp; glass detail cleaning</li>
+              <li class="service-card__feature">Surface polishing &amp; wipe-down</li>
+              <li class="service-card__feature">Floor prep &amp; final polish</li>
+              <li class="service-card__feature">Handoff-ready inspection quality</li>
+            </ul>
+            <a href="services.html#post-construction" class="service-card__link">
+              Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="service-card fade-in" id="service-janitorial" role="listitem" aria-label="Facility Janitorial Programs service">
+            <div class="service-card__icon" aria-hidden="true">🏢</div>
+            <h3 class="service-card__title">Facility Janitorial Programs</h3>
+            <p class="service-card__desc">
+              Recurring commercial cleaning programs tailored to your facility's schedule, 
+              size, and operational requirements. Nightly, weekly, or custom frequency.
+            </p>
+            <ul class="service-card__features" role="list">
+              <li class="service-card__feature">Office &amp; corporate buildings</li>
+              <li class="service-card__feature">Medical &amp; healthcare admin areas</li>
+              <li class="service-card__feature">Retail &amp; mixed-use properties</li>
+              <li class="service-card__feature">Quality control &amp; reporting</li>
+              <li class="service-card__feature">Dedicated account manager</li>
+            </ul>
+            <a href="services.html#janitorial" class="service-card__link">
+              Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="service-card fade-in" id="service-turnover" role="listitem" aria-label="Turnover Cleaning service">
+            <div class="service-card__icon" aria-hidden="true">🔑</div>
+            <h3 class="service-card__title">Turnover &amp; Move-In Ready</h3>
+            <p class="service-card__desc">
+              Fast-mobilization turnover cleaning for property managers, leasing companies, 
+              and landlords who need units, suites, or floors ready for occupancy — now.
+            </p>
+            <ul class="service-card__features" role="list">
+              <li class="service-card__feature">Commercial unit turnovers</li>
+              <li class="service-card__feature">Pre-lease deep cleans</li>
+              <li class="service-card__feature">Real estate showing prep</li>
+              <li class="service-card__feature">Multi-site &amp; multi-unit capacity</li>
+              <li class="service-card__feature">48-hour mobilization available</li>
+            </ul>
+            <a href="services.html#turnover" class="service-card__link">
+              Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="service-card fade-in" id="service-floor" role="listitem" aria-label="Floor Care service">
+            <div class="service-card__icon" aria-hidden="true">✨</div>
+            <h3 class="service-card__title">Floor Care &amp; Polishing</h3>
+            <p class="service-card__desc">
+              Professional strip, seal, wax, and buffing services for commercial hard floors. 
+              Deep carpet extraction and grout restoration for all facility types.
+            </p>
+            <ul class="service-card__features" role="list">
+              <li class="service-card__feature">VCT strip, seal &amp; wax</li>
+              <li class="service-card__feature">Commercial carpet extraction</li>
+              <li class="service-card__feature">Tile &amp; grout restoration</li>
+              <li class="service-card__feature">Epoxy &amp; polished concrete care</li>
+              <li class="service-card__feature">Quarterly &amp; annual programs</li>
+            </ul>
+            <a href="services.html#floor-care" class="service-card__link">
+              Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="service-card fade-in" id="service-dayporter" role="listitem" aria-label="Day Porter Services">
+            <div class="service-card__icon" aria-hidden="true">👷</div>
+            <h3 class="service-card__title">Day Porter Services</h3>
+            <p class="service-card__desc">
+              Dedicated on-site cleaning professionals during business hours to maintain 
+              lobbies, restrooms, common areas, and high-traffic zones in real time.
+            </p>
+            <ul class="service-card__features" role="list">
+              <li class="service-card__feature">Lobby &amp; common area maintenance</li>
+              <li class="service-card__feature">Restroom monitoring &amp; restocking</li>
+              <li class="service-card__feature">Spill response &amp; spot cleaning</li>
+              <li class="service-card__feature">Elevator &amp; stairwell care</li>
+              <li class="service-card__feature">Full-time or part-time available</li>
+            </ul>
+            <a href="services.html#day-porter" class="service-card__link">
+              Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="service-card fade-in" id="service-specialty" role="listitem" aria-label="Specialty Cleaning service">
+            <div class="service-card__icon" aria-hidden="true">🔬</div>
+            <h3 class="service-card__title">Specialty &amp; Add-On Services</h3>
+            <p class="service-card__desc">
+              High-margin specialty services to complement any contract or serve as 
+              standalone one-time solutions for facilities requiring expert attention.
+            </p>
+            <ul class="service-card__features" role="list">
+              <li class="service-card__feature">Pressure washing &amp; exterior clean</li>
+              <li class="service-card__feature">Window &amp; glass detail</li>
+              <li class="service-card__feature">Disinfection &amp; sanitization</li>
+              <li class="service-card__feature">Construction debris removal</li>
+              <li class="service-card__feature">Emergency response cleaning</li>
+            </ul>
+            <a href="services.html#specialty" class="service-card__link">
+              Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-2xl">
+          <a href="services.html" class="btn btn--outline btn--lg">
+            View All Services &amp; Pricing Guides
+            <i class="fa-solid fa-arrow-right btn-icon" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         STATS COUNTER SECTION
+    ════════════════════════════════════════════════════ -->
+    <section class="section--sm" style="background:var(--color-bg-dark);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);" aria-label="Company statistics">
+      <div class="container">
+        <div class="stats-grid stagger" role="list" aria-label="Key performance metrics">
+          <div class="stat-card card fade-in" role="listitem">
+            <span class="stat-card__number" data-count="500" data-suffix="+" aria-label="500 plus projects">500+</span>
+            <span class="stat-card__label">Commercial Projects Completed</span>
+          </div>
+          <div class="stat-card card fade-in" role="listitem">
+            <span class="stat-card__number" data-count="2" data-suffix="M+" aria-label="2 million plus square feet cleaned">2M+</span>
+            <span class="stat-card__label">Square Feet Cleaned</span>
+          </div>
+          <div class="stat-card card fade-in" role="listitem">
+            <span class="stat-card__number" data-count="7" data-suffix="+" aria-label="7 plus years experience">7+ Yrs</span>
+            <span class="stat-card__label">Industry Experience</span>
+          </div>
+          <div class="stat-card card fade-in" role="listitem">
+            <span class="stat-card__number" data-count="98" data-suffix="%" aria-label="98 percent client retention">98%</span>
+            <span class="stat-card__label">Client Retention Rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         POST-CONSTRUCTION DEEP DIVE FEATURE
+    ════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="post-con-heading">
+      <div class="container">
+        <div class="feature-highlight">
+          <div class="fade-in-left">
+            <div class="section-label">Our Flagship Service</div>
+            <h2 class="section-title" id="post-con-heading">
+              Post-Construction Cleaning<br />
+              <span>Trusted by Florida Contractors</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-md);">
+              General contractors, developers, and project managers across Florida rely on Sparkling 
+              Facility Solutions to handle the final phase of every build. We understand construction 
+              timelines, punch-list standards, and occupancy deadlines — because we've worked 
+              alongside the industry for years.
+            </p>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-xl);">
+              Whether it's a 5,000 sq ft office TI or a 200,000 sq ft mixed-use development, 
+              we deliver inspection-ready spaces with the documentation, insurance, and professional 
+              crews commercial clients demand.
+            </p>
+
+            <div class="feature-checklist" role="list" aria-label="Post-construction cleaning features">
+              <div class="feature-check" role="listitem">
+                <div class="feature-check__icon" aria-hidden="true">✓</div>
+                <div class="feature-check__text">
+                  <strong>Rough Clean, Final Clean &amp; Touch-Up Clean</strong> — full three-phase 
+                  coverage aligned with your project schedule.
+                </div>
+              </div>
+              <div class="feature-check" role="listitem">
+                <div class="feature-check__icon" aria-hidden="true">✓</div>
+                <div class="feature-check__text">
+                  <strong>Construction Dust Removal &amp; HEPA Vacuuming</strong> — walls, ceilings, 
+                  ductwork grilles, fixtures, and all surfaces.
+                </div>
+              </div>
+              <div class="feature-check" role="listitem">
+                <div class="feature-check__icon" aria-hidden="true">✓</div>
+                <div class="feature-check__text">
+                  <strong>Window &amp; Glass Detail</strong> — labels, stickers, mortar, caulk, 
+                  and construction residue removed.
+                </div>
+              </div>
+              <div class="feature-check" role="listitem">
+                <div class="feature-check__icon" aria-hidden="true">✓</div>
+                <div class="feature-check__text">
+                  <strong>Floor Protection &amp; Prep</strong> — protective film removal, 
+                  floor cleaning, and initial polish.
+                </div>
+              </div>
+              <div class="feature-check" role="listitem">
+                <div class="feature-check__icon" aria-hidden="true">✓</div>
+                <div class="feature-check__text">
+                  <strong>Insurance &amp; COI Available</strong> — we provide certificates of 
+                  insurance upon request for any project.
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;margin-top:var(--space-2xl);">
+              <a href="quote.html" class="btn btn--primary">Request a Project Quote</a>
+              <a href="services.html#post-construction" class="btn btn--outline">Full Service Details</a>
+            </div>
+          </div>
+
+          <div class="feature-visual fade-in-right" aria-hidden="true">
+            <div class="feature-visual__bg"></div>
+            <div class="feature-visual__grid"></div>
+            <div class="visual-center-icon">🏗️</div>
+            <div class="float-card float-card--1">
+              <i class="fa-solid fa-circle-check float-card__icon"></i>
+              <div>
+                <div class="float-card__title">Inspection Ready</div>
+                <div class="float-card__sub">Punch-list quality standard</div>
+              </div>
+            </div>
+            <div class="float-card float-card--2">
+              <i class="fa-solid fa-bolt float-card__icon"></i>
+              <div>
+                <div class="float-card__title">48-hr Mobilization</div>
+                <div class="float-card__sub">Emergency scheduling available</div>
+              </div>
+            </div>
+            <div class="float-card float-card--3">
+              <i class="fa-solid fa-shield-halved float-card__icon"></i>
+              <div>
+                <div class="float-card__title">Fully Insured</div>
+                <div class="float-card__sub">COI provided on request</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         INDUSTRIES WE SERVE
+    ════════════════════════════════════════════════════ -->
+    <section class="section" style="background:var(--color-bg-dark);border-top:1px solid var(--color-border);" aria-labelledby="industries-heading">
+      <div class="container">
+        <div class="text-center mb-2xl fade-in">
+          <div class="section-label">Industries We Serve</div>
+          <h2 class="section-title" id="industries-heading">
+            Built for <span>Commercial Decision-Makers</span>
+          </h2>
+          <p class="section-subtitle">
+            We speak the language of facility managers, GCs, and property management teams. 
+            Our service approach is tailored to the specific needs of each commercial sector.
+          </p>
+        </div>
+
+        <nav class="industry-grid stagger" aria-label="Industries we serve">
+
+          <a href="industries.html#contractors" class="industry-card fade-in" aria-label="General Contractors">
+            <div class="industry-card__icon" style="background:rgba(255,140,0,0.12);border:1px solid rgba(255,140,0,0.25);" aria-hidden="true">🏗️</div>
+            <div class="industry-card__name">General Contractors</div>
+            <p class="industry-card__desc">Post-construction cleans, rough/final phases, site turnovers, and punch-list support for new builds and renovations.</p>
+            <div style="font-size:0.78rem;color:var(--color-primary);font-weight:600;margin-top:auto;">Learn More →</div>
+          </a>
+
+          <a href="industries.html#property-managers" class="industry-card fade-in" aria-label="Property Managers">
+            <div class="industry-card__icon" style="background:rgba(0,212,255,0.12);border:1px solid rgba(0,212,255,0.25);" aria-hidden="true">🏢</div>
+            <div class="industry-card__name">Property Managers</div>
+            <p class="industry-card__desc">Fast-turnaround unit and suite cleaning, recurring common-area programs, and pressure-washing for managed properties.</p>
+            <div style="font-size:0.78rem;color:var(--color-primary);font-weight:600;margin-top:auto;">Learn More →</div>
+          </a>
+
+          <a href="industries.html#offices" class="industry-card fade-in" aria-label="Corporate Facilities">
+            <div class="industry-card__icon" style="background:rgba(0,71,255,0.12);border:1px solid rgba(0,71,255,0.25);" aria-hidden="true">💼</div>
+            <div class="industry-card__name">Corporate Facilities</div>
+            <p class="industry-card__desc">Professional office cleaning programs with dedicated account management, reporting, and day porter support.</p>
+            <div style="font-size:0.78rem;color:var(--color-primary);font-weight:600;margin-top:auto;">Learn More →</div>
+          </a>
+
+          <a href="industries.html#medical" class="industry-card fade-in" aria-label="Medical and Healthcare">
+            <div class="industry-card__icon" style="background:rgba(0,255,179,0.12);border:1px solid rgba(0,255,179,0.25);" aria-hidden="true">🏥</div>
+            <div class="industry-card__name">Medical &amp; Healthcare</div>
+            <p class="industry-card__desc">Clinical-grade cleaning for administrative areas, waiting rooms, and healthcare support spaces with compliance awareness.</p>
+            <div style="font-size:0.78rem;color:var(--color-primary);font-weight:600;margin-top:auto;">Learn More →</div>
+          </a>
+
+          <a href="industries.html#retail" class="industry-card fade-in" aria-label="Retail and Mixed-Use">
+            <div class="industry-card__icon" style="background:rgba(255,200,0,0.12);border:1px solid rgba(255,200,0,0.25);" aria-hidden="true">🛍️</div>
+            <div class="industry-card__name">Retail &amp; Mixed-Use</div>
+            <p class="industry-card__desc">Overnight and after-hours retail cleaning, common-area maintenance, and post-renovation turnover for shopping centers.</p>
+            <div style="font-size:0.78rem;color:var(--color-primary);font-weight:600;margin-top:auto;">Learn More →</div>
+          </a>
+
+          <a href="industries.html#industrial" class="industry-card fade-in" aria-label="Industrial and Warehouse">
+            <div class="industry-card__icon" style="background:rgba(150,100,255,0.12);border:1px solid rgba(150,100,255,0.25);" aria-hidden="true">🏭</div>
+            <div class="industry-card__name">Industrial &amp; Warehouse</div>
+            <p class="industry-card__desc">Heavy-duty facility cleaning for warehouses, distribution centers, and manufacturing support areas across Florida.</p>
+            <div style="font-size:0.78rem;color:var(--color-primary);font-weight:600;margin-top:auto;">Learn More →</div>
+          </a>
+
+        </nav>
+
+        <div class="text-center mt-2xl">
+          <a href="industries.html" class="btn btn--outline btn--lg">View All Industries We Serve</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         OUR PROCESS
+    ════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="text-center mb-2xl fade-in">
+          <div class="section-label">How It Works</div>
+          <h2 class="section-title" id="process-heading">
+            From <span>First Contact to Final Clean</span>
+          </h2>
+          <p class="section-subtitle">
+            A transparent, efficient process designed to remove friction for busy facility managers and contractors.
+          </p>
+        </div>
+
+        <div class="process-steps stagger" role="list" aria-label="Our process steps">
+          <div class="process-step fade-in" role="listitem">
+            <div class="process-step__num" aria-label="Step 1">01</div>
+            <h3 class="process-step__title">Submit Your Scope</h3>
+            <p class="process-step__desc">
+              Fill out our AI-guided intake form or call us directly. Upload floor plans, 
+              specs, or photos for the most accurate quote.
+            </p>
+          </div>
+          <div class="process-step fade-in" role="listitem">
+            <div class="process-step__num" aria-label="Step 2">02</div>
+            <h3 class="process-step__title">Custom Proposal</h3>
+            <p class="process-step__desc">
+              A senior specialist reviews your project and delivers a tailored proposal 
+              within 2 business hours — no generic pricing.
+            </p>
+          </div>
+          <div class="process-step fade-in" role="listitem">
+            <div class="process-step__num" aria-label="Step 3">03</div>
+            <h3 class="process-step__title">Site Walkthrough</h3>
+            <p class="process-step__desc">
+              We conduct a walkthrough (in-person or virtual) to confirm scope, 
+              timing, access requirements, and special protocols.
+            </p>
+          </div>
+          <div class="process-step fade-in" role="listitem">
+            <div class="process-step__num" aria-label="Step 4">04</div>
+            <h3 class="process-step__title">Deliver &amp; Sign-Off</h3>
+            <p class="process-step__desc">
+              Our trained crews execute the work. You receive a quality checklist and 
+              sign-off report with every project completion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════════════════ -->
+    <section class="section" style="background:var(--color-bg-dark);border-top:1px solid var(--color-border);" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="text-center mb-2xl fade-in">
+          <div class="section-label">Client Testimonials</div>
+          <h2 class="section-title" id="testimonials-heading">
+            Trusted by <span>Florida's Commercial Leaders</span>
+          </h2>
+        </div>
+
+        <div class="testimonials-grid stagger" role="list" aria-label="Client testimonials">
+
+          <article class="testimonial-card fade-in" role="listitem">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Sparkling Facility Solutions handled the final clean on our 48,000 sq ft office 
+              development in Brickell. They mobilized within 24 hours, worked around our 
+              subcontractors, and delivered inspection-ready results. We've used them on three 
+              projects since."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">RK</div>
+              <div>
+                <div class="testimonial-card__name">R. Kaminski</div>
+                <div class="testimonial-card__role">Project Manager · Commercial Developer, Miami, FL</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card fade-in" role="listitem">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "We manage 12 commercial properties in South Florida and needed a reliable cleaning 
+              partner that could handle everything — turnover, ongoing janitorial, and floor care. 
+              Sparkling delivers consistently. The communication is excellent."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">JM</div>
+              <div>
+                <div class="testimonial-card__name">J. Morales</div>
+                <div class="testimonial-card__role">Director of Operations · Property Management Group, Fort Lauderdale</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card fade-in" role="listitem">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "After our general contractor wrapped up a 22,000 sq ft warehouse buildout in 
+              Orlando, we brought in Sparkling for the post-con clean. Professional, fast, 
+              and the space was ready for our client walk-through the same day. Highly recommend."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">AL</div>
+              <div>
+                <div class="testimonial-card__name">A. Laurent</div>
+                <div class="testimonial-card__role">Facilities Manager · Logistics Company, Orlando, FL</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         FAQ SECTION
+    ════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="text-center mb-2xl fade-in">
+          <div class="section-label">Common Questions</div>
+          <h2 class="section-title" id="faq-heading">Frequently Asked <span>Questions</span></h2>
+        </div>
+
+        <div style="max-width:760px;margin:0 auto;" role="list" aria-label="FAQ items">
+
+          <div class="faq-item card mb-md" style="padding:0;" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" style="width:100%;text-align:left;padding:var(--space-lg) var(--space-xl);display:flex;align-items:center;justify-content:space-between;font-size:0.95rem;font-weight:600;color:var(--color-text-primary);background:none;border:none;cursor:pointer;">
+              What areas in Florida do you serve?
+              <i class="fa-solid fa-chevron-down" aria-hidden="true" style="color:var(--color-primary);transition:transform 0.3s;"></i>
+            </button>
+            <div class="faq-content" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+              <p style="padding:0 var(--space-xl) var(--space-lg);color:var(--color-text-secondary);font-size:0.9rem;line-height:1.75;">
+                We serve all major Florida markets including Miami, Fort Lauderdale, West Palm Beach, 
+                Tampa, St. Petersburg, Orlando, Jacksonville, Naples, Fort Myers, and the Florida Keys. 
+                For statewide contracts or multi-location projects, we coordinate coverage across regions. 
+                Contact us to discuss your specific locations.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item card mb-md" style="padding:0;" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" style="width:100%;text-align:left;padding:var(--space-lg) var(--space-xl);display:flex;align-items:center;justify-content:space-between;font-size:0.95rem;font-weight:600;color:var(--color-text-primary);background:none;border:none;cursor:pointer;">
+              How quickly can you mobilize for a post-construction project?
+              <i class="fa-solid fa-chevron-down" aria-hidden="true" style="color:var(--color-primary);transition:transform 0.3s;"></i>
+            </button>
+            <div class="faq-content" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+              <p style="padding:0 var(--space-xl) var(--space-lg);color:var(--color-text-secondary);font-size:0.9rem;line-height:1.75;">
+                For urgent post-construction projects, we can often mobilize within 24–48 hours depending 
+                on location and crew availability. For large-scale projects, we recommend giving us 
+                3–7 days' notice so we can assign the right crew size. Contact us directly at 
+                (305) 434-6070 for emergency scheduling.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item card mb-md" style="padding:0;" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" style="width:100%;text-align:left;padding:var(--space-lg) var(--space-xl);display:flex;align-items:center;justify-content:space-between;font-size:0.95rem;font-weight:600;color:var(--color-text-primary);background:none;border:none;cursor:pointer;">
+              Are you licensed and insured for commercial work?
+              <i class="fa-solid fa-chevron-down" aria-hidden="true" style="color:var(--color-primary);transition:transform 0.3s;"></i>
+            </button>
+            <div class="faq-content" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+              <p style="padding:0 var(--space-xl) var(--space-lg);color:var(--color-text-secondary);font-size:0.9rem;line-height:1.75;">
+                Yes. Sparkling Facility Solutions is fully licensed, carries general liability insurance, 
+                and maintains workers' compensation coverage for all employees. We can provide a 
+                Certificate of Insurance (COI) naming your organization as additionally insured, 
+                which is standard for commercial contracts.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item card mb-md" style="padding:0;" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" style="width:100%;text-align:left;padding:var(--space-lg) var(--space-xl);display:flex;align-items:center;justify-content:space-between;font-size:0.95rem;font-weight:600;color:var(--color-text-primary);background:none;border:none;cursor:pointer;">
+              How do you price commercial cleaning contracts?
+              <i class="fa-solid fa-chevron-down" aria-hidden="true" style="color:var(--color-primary);transition:transform 0.3s;"></i>
+            </button>
+            <div class="faq-content" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+              <p style="padding:0 var(--space-xl) var(--space-lg);color:var(--color-text-secondary);font-size:0.9rem;line-height:1.75;">
+                We price based on square footage, scope of work, frequency, and facility type. 
+                Post-construction cleaning is typically quoted per-project after reviewing floor plans 
+                and scope. Janitorial programs are priced per visit or on a monthly contract basis. 
+                All proposals are itemized with transparent line-item detail — no hidden fees.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item card" style="padding:0;" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" style="width:100%;text-align:left;padding:var(--space-lg) var(--space-xl);display:flex;align-items:center;justify-content:space-between;font-size:0.95rem;font-weight:600;color:var(--color-text-primary);background:none;border:none;cursor:pointer;">
+              Can I upload floor plans or scope-of-work documents for my quote?
+              <i class="fa-solid fa-chevron-down" aria-hidden="true" style="color:var(--color-primary);transition:transform 0.3s;"></i>
+            </button>
+            <div class="faq-content" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+              <p style="padding:0 var(--space-xl) var(--space-lg);color:var(--color-text-secondary);font-size:0.9rem;line-height:1.75;">
+                Absolutely. Our quote form supports file uploads including PDF floor plans, DWG/CAD files, 
+                scope-of-work documents, photos, and specification sheets. Uploading documents helps us 
+                prepare a significantly more accurate proposal and speeds up the quoting process.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         FINAL CTA BANNER
+    ════════════════════════════════════════════════════ -->
+    <section class="section--sm" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <div class="section-label" style="justify-content:center;">Ready to Work Together?</div>
+          <h2 class="cta-banner__title" id="cta-heading">
+            Get Your <span class="gradient-text">Free Commercial Cleaning Quote</span> Today
+          </h2>
+          <p class="cta-banner__subtitle">
+            Upload your floor plans, describe your scope, and a senior specialist will 
+            respond with a tailored proposal within 2 business hours.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="quote.html" class="btn btn--primary btn--lg">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+              Start Your Quote — It's Free
+            </a>
+            <a href="tel:3054346070" class="btn btn--ghost btn--lg">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              (305) 434-6070
+            </a>
+          </div>
+          <p style="margin-top:var(--space-lg);font-size:0.78rem;color:var(--color-text-muted);">
+            No commitment required · Licensed &amp; insured · 2-hour response guarantee
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- AI Widget (injected by components.js) -->
+  <div id="ai-widget-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- FAQ Enhancement Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.faq-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const item = trigger.closest('.faq-item');
+          const content = item.querySelector('.faq-content');
+          const icon = trigger.querySelector('i');
+          const isOpen = item.classList.contains('open');
+
+          // Close all
+          document.querySelectorAll('.faq-item.open').forEach(open => {
+            open.classList.remove('open');
+            open.querySelector('.faq-content').style.maxHeight = '0';
+            const openIcon = open.querySelector('.faq-trigger i');
+            if (openIcon) openIcon.style.transform = 'rotate(0)';
+            open.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+          });
+
+          // Toggle this one
+          if (!isOpen) {
+            item.classList.add('open');
+            content.style.maxHeight = content.scrollHeight + 'px';
+            if (icon) icon.style.transform = 'rotate(180deg)';
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

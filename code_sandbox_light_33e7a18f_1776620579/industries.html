@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industries Served | Commercial Cleaning for Contractors, Property Managers & Facilities | Sparkling Facility Solutions</title>
+  <meta name="description" content="Sparkling Facility Solutions serves general contractors, property managers, corporate facilities, medical offices, retail centers, and industrial sites across Florida with specialized commercial cleaning solutions." />
+  <meta name="keywords" content="commercial cleaning for general contractors Florida, property management cleaning Florida, corporate facility cleaning, medical office cleaning Florida, retail commercial cleaning, industrial warehouse cleaning Florida" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sparklingfacilitysolutions.com/industries.html" />
+  <meta property="og:title" content="Industries Served | Sparkling Facility Solutions Florida" />
+  <meta property="og:description" content="Specialized commercial cleaning for contractors, property managers, corporate facilities, medical offices, and more across Florida." />
+  <meta property="og:url" content="https://www.sparklingfacilitysolutions.com/industries.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Commercial Cleaning for Multiple Industries",
+    "provider": {"@type": "LocalBusiness", "name": "Sparkling Facility Solutions LLC"},
+    "areaServed": {"@type": "State", "name": "Florida"},
+    "description": "B2B commercial cleaning services tailored for general contractors, property managers, corporate facilities, medical offices, retail, and industrial clients"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
+
+  <style>
+    .industry-section {
+      padding: var(--space-4xl) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .industry-section:last-child { border-bottom: none; }
+
+    .industry-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4xl);
+      align-items: center;
+    }
+
+    .industry-layout.reverse { direction: rtl; }
+    .industry-layout.reverse > * { direction: ltr; }
+
+    .industry-visual {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-3xl);
+      position: relative;
+      overflow: hidden;
+      min-height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .industry-visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,71,255,0.06) 0%, rgba(0,212,255,0.03) 100%);
+    }
+
+    .industry-visual__emoji {
+      font-size: 5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .industry-pain-points {
+      background: var(--color-bg-glass-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      margin-top: var(--space-xl);
+      position: relative;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .industry-pain-points__title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-md);
+    }
+
+    .pain-point {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      padding: var(--space-xs) 0;
+    }
+
+    .pain-point i { color: var(--color-primary); margin-top: 2px; font-size: 0.7rem; }
+
+    .solution-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+
+    .solution-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      padding: var(--space-md);
+      background: var(--color-bg-glass-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-fast);
+    }
+
+    .solution-item:hover {
+      border-color: var(--color-border-strong);
+      background: var(--color-primary-glow);
+    }
+
+    .solution-item__icon {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .solution-item__title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+
+    .solution-item__desc {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      margin-top: 2px;
+    }
+
+    .industry-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 0.35rem 0.75rem;
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 900px) {
+      .industry-layout, .industry-layout.reverse { 
+        grid-template-columns: 1fr; 
+        direction: ltr;
+      }
+    }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="sr-only" style="position:absolute;z-index:9999;padding:8px 16px;background:var(--color-primary);color:#000;font-weight:700;border-radius:4px;">Skip to Main Content</a>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="industries-page-title">
+      <div class="container page-hero__inner">
+        <div class="section-label fade-in">Industries We Serve</div>
+        <h1 class="fade-in" id="industries-page-title" style="max-width:700px;margin-bottom:var(--space-lg);">
+          We Speak the Language of <em style="font-style:normal;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Commercial Decision-Makers</em>
+        </h1>
+        <p class="section-subtitle fade-in" style="max-width:620px;">
+          Every industry has unique standards, timelines, and cleaning requirements. 
+          Our service approach is tailored specifically to what general contractors, property managers, 
+          facility directors, and procurement leaders actually need to make a confident vendor decision.
+        </p>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES OVERVIEW -->
+    <section class="section--sm" style="background:var(--color-bg-dark);border-bottom:1px solid var(--color-border);" aria-label="Industries quick navigation">
+      <div class="container">
+        <nav aria-label="Jump to industry section" style="display:flex;flex-wrap:wrap;gap:var(--space-sm);justify-content:center;">
+          <a href="#contractors" class="industry-badge"><i class="fa-solid fa-hard-hat" aria-hidden="true"></i> General Contractors</a>
+          <a href="#property-managers" class="industry-badge"><i class="fa-solid fa-key" aria-hidden="true"></i> Property Managers</a>
+          <a href="#offices" class="industry-badge"><i class="fa-solid fa-building" aria-hidden="true"></i> Corporate Facilities</a>
+          <a href="#medical" class="industry-badge"><i class="fa-solid fa-hospital" aria-hidden="true"></i> Medical &amp; Healthcare</a>
+          <a href="#retail" class="industry-badge"><i class="fa-solid fa-store" aria-hidden="true"></i> Retail &amp; Mixed-Use</a>
+          <a href="#industrial" class="industry-badge"><i class="fa-solid fa-warehouse" aria-hidden="true"></i> Industrial &amp; Warehouse</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- GENERAL CONTRACTORS -->
+    <section class="industry-section" id="contractors" aria-labelledby="contractors-heading">
+      <div class="container">
+        <div class="industry-layout">
+          <div class="fade-in-left">
+            <div class="section-label">Primary Target</div>
+            <h2 style="margin-bottom:var(--space-md);" id="contractors-heading">
+              General Contractors &amp;<br />
+              <span class="gradient-text">Construction Teams</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              We understand the pressure of construction timelines. Punch-list windows close fast, 
+              certificate of occupancy inspections require spotless spaces, and owners expect 
+              handoff-ready conditions on day one. Sparkling Facility Solutions is the cleaning 
+              partner GCs call when the deadline matters.
+            </p>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-xl);">
+              Our crews coordinate directly with your superintendent or project manager. We understand 
+              access schedules, can work around active trades, and carry the insurance documentation 
+              (COI, workers' comp) every GC requires before awarding a scope.
+            </p>
+
+            <div class="solution-list" role="list" aria-label="Solutions for general contractors">
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-broom"></i></div>
+                <div>
+                  <div class="solution-item__title">3-Phase Post-Construction Cleaning</div>
+                  <div class="solution-item__desc">Rough clean, final clean, touch-up clean aligned to your project schedule</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <div class="solution-item__title">Emergency Mobilization</div>
+                  <div class="solution-item__desc">24–48 hour mobilization for deadline-driven final cleans</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-file-contract"></i></div>
+                <div>
+                  <div class="solution-item__title">COI &amp; Insurance Documentation</div>
+                  <div class="solution-item__desc">Certificate of insurance naming your organization as additionally insured</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-list-check"></i></div>
+                <div>
+                  <div class="solution-item__title">Quality Sign-Off Reports</div>
+                  <div class="solution-item__desc">Completion checklist and sign-off documentation for your project files</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-2xl);display:flex;gap:var(--space-md);flex-wrap:wrap;">
+              <a href="quote.html?industry=contractor" class="btn btn--primary">
+                <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+                Get a Contractor Quote
+              </a>
+              <a href="tel:3054346070" class="btn btn--outline">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                Call for Urgent Projects
+              </a>
+            </div>
+          </div>
+
+          <div class="industry-visual fade-in-right" aria-hidden="true">
+            <div class="industry-visual__emoji">🏗️</div>
+            <div class="industry-pain-points">
+              <div class="industry-pain-points__title">What GCs Need From a Cleaning Partner</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Works around active trades and construction schedules</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Provides COI and proper insurance documentation</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Delivers inspection-ready quality on first pass</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Can mobilize fast when schedules compress</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Communicates professionally with ownership groups</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTY MANAGERS -->
+    <section class="industry-section" id="property-managers" aria-labelledby="pm-heading">
+      <div class="container">
+        <div class="industry-layout reverse">
+          <div class="fade-in-right">
+            <div class="section-label">Key Revenue Driver</div>
+            <h2 style="margin-bottom:var(--space-md);" id="pm-heading">
+              Property Managers &amp;<br />
+              <span class="gradient-text">Building Owners</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              Vacant units cost money. Tenants who walk into a dirty space don't sign leases. 
+              Building owners who don't maintain common areas get complaints and chargebacks. 
+              Property managers rely on Sparkling Facility Solutions to eliminate these problems 
+              with fast turnovers, consistent programs, and professional reporting.
+            </p>
+
+            <div class="solution-list" role="list" aria-label="Solutions for property managers">
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-key"></i></div>
+                <div>
+                  <div class="solution-item__title">Fast Turnover Cleaning</div>
+                  <div class="solution-item__desc">Move-in ready commercial spaces within your timeline and budget</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-repeat"></i></div>
+                <div>
+                  <div class="solution-item__title">Recurring Common Area Programs</div>
+                  <div class="solution-item__desc">Lobby, elevator, hallways, and amenity space maintenance on your schedule</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <div class="solution-item__title">Monthly Reporting &amp; Documentation</div>
+                  <div class="solution-item__desc">Written reports you can share with ownership groups and tenants</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-droplet"></i></div>
+                <div>
+                  <div class="solution-item__title">Exterior &amp; Pressure Washing</div>
+                  <div class="solution-item__desc">Parking lots, walkways, dumpster areas, and building facades</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-2xl);">
+              <a href="quote.html?industry=property-manager" class="btn btn--primary">Request Property Management Quote</a>
+            </div>
+          </div>
+
+          <div class="industry-visual fade-in-left" aria-hidden="true">
+            <div class="industry-visual__emoji">🏢</div>
+            <div class="industry-pain-points">
+              <div class="industry-pain-points__title">What Property Managers Need</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Fast, reliable turnover between tenants</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> One vendor for multiple properties</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Consistent crews who know the building</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Professional communication with tenants</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Documentation for owner reporting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORPORATE FACILITIES -->
+    <section class="industry-section" id="offices" aria-labelledby="offices-heading">
+      <div class="container">
+        <div class="industry-layout">
+          <div class="fade-in-left">
+            <div class="section-label">Steady Recurring Revenue</div>
+            <h2 style="margin-bottom:var(--space-md);" id="offices-heading">
+              Corporate Facilities &amp;<br />
+              <span class="gradient-text">Office Buildings</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              Operations managers and facility directors at corporate headquarters, office parks, 
+              and multi-tenant buildings need a cleaning vendor they never have to think about. 
+              We provide seamless recurring programs with a dedicated point of contact, consistent 
+              crews, and monthly quality verification.
+            </p>
+
+            <div class="solution-list" role="list" aria-label="Solutions for corporate facilities">
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-calendar-check"></i></div>
+                <div>
+                  <div class="solution-item__title">Nightly Janitorial Programs</div>
+                  <div class="solution-item__desc">After-hours cleaning for offices, restrooms, kitchens, and common areas</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <div class="solution-item__title">Dedicated Day Porter</div>
+                  <div class="solution-item__desc">On-site professional during business hours for lobbies and high-traffic areas</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+                <div>
+                  <div class="solution-item__title">Quarterly Deep-Cleans</div>
+                  <div class="solution-item__desc">Floor care, carpet extraction, and comprehensive facility restoration</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-2xl);">
+              <a href="quote.html?industry=corporate" class="btn btn--primary">Request Corporate Cleaning Proposal</a>
+            </div>
+          </div>
+
+          <div class="industry-visual fade-in-right" aria-hidden="true">
+            <div class="industry-visual__emoji">💼</div>
+            <div class="industry-pain-points">
+              <div class="industry-pain-points__title">What Facility Managers Need</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Reliability — no missed visits, no excuses</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Consistent, background-checked crew members</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Monthly inspection reports for management</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Single point of contact for all issues</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Compliance with building security protocols</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDICAL -->
+    <section class="industry-section" id="medical" aria-labelledby="medical-heading">
+      <div class="container">
+        <div class="industry-layout reverse">
+          <div class="fade-in-right">
+            <div class="section-label">Specialized Protocols</div>
+            <h2 style="margin-bottom:var(--space-md);" id="medical-heading">
+              Medical &amp; Healthcare<br />
+              <span class="gradient-text">Administrative Spaces</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              Medical offices, dental practices, urgent care centers, and wellness facilities 
+              require elevated cleaning standards — particularly in waiting rooms, restrooms, 
+              and reception areas where patient perception is critical. We use appropriate 
+              hospital-grade disinfectants and follow infection control awareness protocols 
+              for administrative healthcare environments.
+            </p>
+
+            <div class="solution-list" role="list" aria-label="Solutions for medical facilities">
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-shield-virus"></i></div>
+                <div>
+                  <div class="solution-item__title">Hospital-Grade Disinfection</div>
+                  <div class="solution-item__desc">EPA-approved disinfectants for high-touch surfaces and waiting areas</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <div class="solution-item__title">Before/After Hours Scheduling</div>
+                  <div class="solution-item__desc">Cleaning done before patient hours to maintain hygiene and compliance</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-notes-medical"></i></div>
+                <div>
+                  <div class="solution-item__title">Compliance Documentation</div>
+                  <div class="solution-item__desc">Service logs and cleaning records available for facility compliance files</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-2xl);">
+              <a href="quote.html?industry=medical" class="btn btn--primary">Request Medical Facility Quote</a>
+            </div>
+          </div>
+
+          <div class="industry-visual fade-in-left" aria-hidden="true">
+            <div class="industry-visual__emoji">🏥</div>
+            <div class="industry-pain-points">
+              <div class="industry-pain-points__title">What Healthcare Admin Managers Need</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Elevated disinfection standards</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Cleaning before patient-facing hours</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Documentation for compliance purposes</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Staff who understand healthcare confidentiality</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Consistent, trained team members only</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RETAIL -->
+    <section class="industry-section" id="retail" aria-labelledby="retail-heading">
+      <div class="container">
+        <div class="industry-layout">
+          <div class="fade-in-left">
+            <div class="section-label">After-Hours &amp; Overnight</div>
+            <h2 style="margin-bottom:var(--space-md);" id="retail-heading">
+              Retail Centers &amp;<br />
+              <span class="gradient-text">Mixed-Use Properties</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              Shopping centers, strip malls, lifestyle centers, and mixed-use developments 
+              require reliable after-hours cleaning without disrupting business operations. 
+              We specialize in overnight retail cleaning and common-area maintenance that 
+              keeps tenants happy and properties performing.
+            </p>
+
+            <div class="solution-list" role="list" aria-label="Solutions for retail facilities">
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-moon"></i></div>
+                <div>
+                  <div class="solution-item__title">Overnight Retail Cleaning</div>
+                  <div class="solution-item__desc">After-close cleaning for individual stores and multi-tenant centers</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-people-group"></i></div>
+                <div>
+                  <div class="solution-item__title">Common Area Maintenance</div>
+                  <div class="solution-item__desc">Food courts, restrooms, walkways, and seating areas maintained daily</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                  <div class="solution-item__title">Post-Renovation Cleaning</div>
+                  <div class="solution-item__desc">Turnkey final cleans when retailers renovate or new tenants take occupancy</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-2xl);">
+              <a href="quote.html?industry=retail" class="btn btn--primary">Request Retail Cleaning Quote</a>
+            </div>
+          </div>
+
+          <div class="industry-visual fade-in-right" aria-hidden="true">
+            <div class="industry-visual__emoji">🛍️</div>
+            <div class="industry-pain-points">
+              <div class="industry-pain-points__title">What Retail Center Managers Need</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> After-hours access and reliable overnight crews</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Tenant satisfaction and minimal complaints</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Consistent appearance for shopper experience</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Single vendor for multiple tenant suites</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Prompt response to spills and incidents</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIAL -->
+    <section class="industry-section" id="industrial" aria-labelledby="industrial-heading">
+      <div class="container">
+        <div class="industry-layout reverse">
+          <div class="fade-in-right">
+            <div class="section-label">Heavy-Duty Capability</div>
+            <h2 style="margin-bottom:var(--space-md);" id="industrial-heading">
+              Industrial &amp;<br />
+              <span class="gradient-text">Warehouse Facilities</span>
+            </h2>
+            <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+              Distribution centers, manufacturing support facilities, logistics hubs, and 
+              industrial parks across Florida have unique heavy-duty cleaning needs. 
+              We deploy the right equipment and trained crews for large-format industrial 
+              spaces — from office areas to warehouse floors and loading dock zones.
+            </p>
+
+            <div class="solution-list" role="list" aria-label="Solutions for industrial facilities">
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-warehouse"></i></div>
+                <div>
+                  <div class="solution-item__title">Warehouse Floor Cleaning</div>
+                  <div class="solution-item__desc">Large-format floor sweeping, scrubbing, and maintenance for distribution centers</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-building-flag"></i></div>
+                <div>
+                  <div class="solution-item__title">Office + Facility Combo Programs</div>
+                  <div class="solution-item__desc">Combined office area janitorial and industrial floor maintenance under one contract</div>
+                </div>
+              </div>
+              <div class="solution-item" role="listitem">
+                <div class="solution-item__icon" aria-hidden="true"><i class="fa-solid fa-hard-hat"></i></div>
+                <div>
+                  <div class="solution-item__title">Post-Build Industrial Cleans</div>
+                  <div class="solution-item__desc">Final cleans for newly built or expanded warehouses and industrial facilities</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-2xl);">
+              <a href="quote.html?industry=industrial" class="btn btn--primary">Request Industrial Facility Quote</a>
+            </div>
+          </div>
+
+          <div class="industry-visual fade-in-left" aria-hidden="true">
+            <div class="industry-visual__emoji">🏭</div>
+            <div class="industry-pain-points">
+              <div class="industry-pain-points__title">What Industrial Facility Managers Need</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Equipment capable of large-format floor areas</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> OSHA safety compliance on the job site</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Crews who work safely around racking and machinery</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Workers' compensation coverage</div>
+              <div class="pain-point"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Flexible scheduling around operations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section--sm" aria-labelledby="industry-cta-heading">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 class="cta-banner__title" id="industry-cta-heading">
+            Don't See Your Industry?<br />
+            <span class="gradient-text">Let's Talk.</span>
+          </h2>
+          <p class="cta-banner__subtitle">
+            We work with a wide range of commercial clients. If your sector isn't listed above, 
+            reach out — chances are we've handled your facility type before.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="quote.html" class="btn btn--primary btn--lg">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Get a Free Quote
+            </a>
+            <a href="contact.html" class="btn btn--ghost btn--lg">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact a Specialist
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="ai-widget-placeholder"></div>
+
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commercial Cleaning Services | Post-Construction, Janitorial & Facility Care | Sparkling Facility Solutions Florida</title>
+  <meta name="description" content="Full-scope commercial cleaning services in Florida: post-construction cleaning, facility janitorial programs, turnover cleaning, floor care, day porter services, and pressure washing. Licensed & insured. Fast quotes." />
+  <meta name="keywords" content="post construction cleaning Florida, commercial janitorial services Florida, facility cleaning programs, turnover cleaning Florida, floor care commercial, day porter services, pressure washing commercial Florida" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sparklingfacilitysolutions.com/services.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Commercial Cleaning Services | Sparkling Facility Solutions Florida" />
+  <meta property="og:description" content="Post-construction cleaning, facility janitorial, floor care, and more for commercial clients across Florida. Get a free tailored quote." />
+  <meta property="og:url" content="https://www.sparklingfacilitysolutions.com/services.html" />
+
+  <!-- Schema: Service Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Commercial Cleaning Services by Sparkling Facility Solutions",
+    "description": "Full-scope B2B commercial cleaning services across Florida",
+    "itemListElement": [
+      {"@type": "Service", "position": 1, "name": "Post-Construction Cleaning", "description": "Final cleans, rough cleans, and touch-up cleans for construction handoffs", "areaServed": "Florida"},
+      {"@type": "Service", "position": 2, "name": "Facility Janitorial Programs", "description": "Recurring commercial janitorial services for offices, retail, and facilities", "areaServed": "Florida"},
+      {"@type": "Service", "position": 3, "name": "Turnover Cleaning", "description": "Fast mobilization commercial unit and suite turnover cleaning", "areaServed": "Florida"},
+      {"@type": "Service", "position": 4, "name": "Floor Care & Polishing", "description": "VCT strip/wax, carpet extraction, tile grout restoration", "areaServed": "Florida"},
+      {"@type": "Service", "position": 5, "name": "Day Porter Services", "description": "On-site daytime cleaning staff for lobbies and common areas", "areaServed": "Florida"},
+      {"@type": "Service", "position": 6, "name": "Pressure Washing", "description": "Commercial exterior pressure washing and surface cleaning", "areaServed": "Florida"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
+
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: var(--space-4xl);
+      align-items: start;
+    }
+
+    .service-sidebar {
+      position: sticky;
+      top: calc(var(--nav-height) + 20px);
+    }
+
+    .sidebar-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .sidebar-card__header {
+      background: linear-gradient(135deg, rgba(0,71,255,0.2), rgba(0,212,255,0.1));
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-lg);
+    }
+
+    .sidebar-card__title {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .sidebar-card__body {
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .service-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .service-nav-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 0.6rem 0.875rem;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: all var(--transition-fast);
+      border: 1px solid transparent;
+    }
+
+    .service-nav-item:hover,
+    .service-nav-item.active {
+      color: var(--color-primary);
+      background: var(--color-primary-glow);
+      border-color: var(--color-border);
+    }
+
+    .service-nav-item i {
+      font-size: 0.8rem;
+      width: 14px;
+    }
+
+    .service-section {
+      padding: var(--space-3xl) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .service-section:last-child {
+      border-bottom: none;
+    }
+
+    .service-section__header {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-xl);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .service-section__icon-lg {
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+
+    .service-detail-block {
+      background: var(--color-bg-glass-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+    }
+
+    .service-detail-block__title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    .service-detail-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .service-detail-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .service-detail-list li::before {
+      content: '→';
+      color: var(--color-primary);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .pricing-guide {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-lg);
+      padding: var(--space-2xl);
+      margin-top: var(--space-xl);
+    }
+
+    .pricing-guide__title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-primary);
+      margin-bottom: var(--space-lg);
+    }
+
+    .pricing-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.85rem;
+    }
+
+    .pricing-row:last-child { border-bottom: none; }
+
+    .pricing-row__service { color: var(--color-text-secondary); }
+
+    .pricing-row__range {
+      font-weight: 600;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+    }
+
+    .pricing-note {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: var(--space-md);
+      line-height: 1.6;
+    }
+
+    /* Service Tags */
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-top: var(--space-lg);
+    }
+
+    .service-tag {
+      padding: 0.3rem 0.75rem;
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    @media (max-width: 1024px) {
+      .service-detail { grid-template-columns: 1fr; }
+      .service-sidebar { position: static; }
+    }
+
+    @media (max-width: 640px) {
+      .service-detail-grid { grid-template-columns: 1fr; }
+      .service-section__header { flex-direction: column; }
+    }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="sr-only" style="position:absolute;z-index:9999;padding:8px 16px;background:var(--color-primary);color:#000;font-weight:700;border-radius:4px;">Skip to Main Content</a>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="services-page-title">
+      <div class="container page-hero__inner">
+        <div class="section-label fade-in">Commercial Cleaning Services</div>
+        <h1 class="fade-in" id="services-page-title" style="max-width:700px;margin-bottom:var(--space-lg);">
+          Florida's Full-Scope <em style="font-style:normal;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">B2B Cleaning Services</em>
+        </h1>
+        <p class="section-subtitle fade-in" style="max-width:600px;">
+          From post-construction final cleans to recurring janitorial programs, every service 
+          is purpose-built for commercial facilities, contractors, and property managers — 
+          with the documentation, insurance, and professionalism B2B buyers require.
+        </p>
+        <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;margin-top:var(--space-xl);" class="fade-in">
+          <a href="quote.html" class="btn btn--primary btn--lg">
+            <i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Get a Free Quote
+          </a>
+          <a href="tel:3054346070" class="btn btn--ghost btn--lg">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> (305) 434-6070
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="service-detail">
+
+          <!-- Main Content -->
+          <div>
+
+            <!-- 1. Post-Construction -->
+            <div class="service-section fade-in" id="post-construction" aria-label="Post-Construction Cleaning service">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(255,140,0,0.15),rgba(255,200,0,0.1));border:1px solid rgba(255,140,0,0.25);" aria-hidden="true">🏗️</div>
+                <div>
+                  <div class="section-label" style="margin-bottom:var(--space-sm);">Most In-Demand</div>
+                  <h2 style="margin-bottom:var(--space-sm);">Post-Construction Cleaning</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    Florida's construction boom demands cleaning partners who understand jobsite protocols, 
+                    punch-list standards, and occupancy timelines. We've handled post-construction cleans 
+                    for developers, general contractors, and tenant improvement projects from Key West 
+                    to Jacksonville — delivering inspection-ready spaces every time.
+                  </p>
+                </div>
+              </div>
+
+              <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-lg);">
+                Our post-construction cleaning process is structured in phases that align with your 
+                project timeline. Whether you need a one-time final clean or a full three-phase 
+                program (rough, final, and touch-up), we coordinate directly with your project 
+                manager to work around active trades and hit occupancy deadlines.
+              </p>
+
+              <div class="service-detail-grid" role="list">
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Phase 1 — Rough Clean</div>
+                  <ul class="service-detail-list">
+                    <li>Remove large construction debris</li>
+                    <li>Sweep and vacuum all floors</li>
+                    <li>Wipe down surfaces for trade access</li>
+                    <li>Clear dumpsters and debris piles</li>
+                    <li>Initial wall and ceiling surface wipe</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Phase 2 — Final Clean</div>
+                  <ul class="service-detail-list">
+                    <li>Full dust removal, HEPA vacuuming</li>
+                    <li>Window &amp; glass label/sticker removal</li>
+                    <li>All surface detail cleaning</li>
+                    <li>Restroom sanitization &amp; polish</li>
+                    <li>Floor clean &amp; initial polish</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Phase 3 — Touch-Up Clean</div>
+                  <ul class="service-detail-list">
+                    <li>Pre-walkthrough inspection clean</li>
+                    <li>Final glass and mirror polish</li>
+                    <li>Spot cleaning &amp; dust re-check</li>
+                    <li>Fixture detail &amp; polishing</li>
+                    <li>Quality control sign-off sheet</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Specialty Scope Items</div>
+                  <ul class="service-detail-list">
+                    <li>HVAC grille &amp; ductwork wipe-down</li>
+                    <li>Protective film removal</li>
+                    <li>Concrete dust &amp; grout haze removal</li>
+                    <li>Construction adhesive cleanup</li>
+                    <li>Exterior entry &amp; pressure washing</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pricing-guide" aria-label="Post-construction pricing guide">
+                <div class="pricing-guide__title">Pricing Reference Guide</div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Rough Clean</span>
+                  <span class="pricing-row__range">$0.08–$0.15 / sq ft</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Final Clean</span>
+                  <span class="pricing-row__range">$0.15–$0.30 / sq ft</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Touch-Up / Pre-Occupancy</span>
+                  <span class="pricing-row__range">$0.08–$0.15 / sq ft</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Full 3-Phase Package</span>
+                  <span class="pricing-row__range">Custom Proposal</span>
+                </div>
+                <p class="pricing-note">
+                  * Prices vary by facility type, scope, region, and project complexity. 
+                  All pricing is itemized and transparent. Request a free proposal for your specific project.
+                </p>
+              </div>
+
+              <div class="service-tags" aria-label="Service tags">
+                <span class="service-tag">Miami</span>
+                <span class="service-tag">Tampa</span>
+                <span class="service-tag">Orlando</span>
+                <span class="service-tag">Jacksonville</span>
+                <span class="service-tag">Fort Lauderdale</span>
+                <span class="service-tag">Statewide</span>
+                <span class="service-tag">COI Available</span>
+                <span class="service-tag">Fast Mobilization</span>
+              </div>
+
+              <div style="margin-top:var(--space-xl);display:flex;gap:var(--space-md);flex-wrap:wrap;">
+                <a href="quote.html?service=post-construction" class="btn btn--primary">Request Post-Con Quote</a>
+                <a href="tel:3054346070" class="btn btn--outline">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now for Urgent Projects
+                </a>
+              </div>
+            </div>
+
+            <!-- 2. Janitorial -->
+            <div class="service-section fade-in" id="janitorial" aria-label="Facility Janitorial Programs service">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(0,71,255,0.1));border:1px solid rgba(0,212,255,0.25);" aria-hidden="true">🏢</div>
+                <div>
+                  <div class="section-label" style="margin-bottom:var(--space-sm);">Recurring Revenue Service</div>
+                  <h2 style="margin-bottom:var(--space-sm);">Facility Janitorial Programs</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    Structured recurring cleaning programs for commercial facilities of all sizes. 
+                    We build custom schedules, assign dedicated crews, and provide monthly reporting 
+                    so facility managers always know exactly what's being done and when.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-detail-grid" role="list">
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Core Janitorial Tasks</div>
+                  <ul class="service-detail-list">
+                    <li>General floor cleaning &amp; vacuuming</li>
+                    <li>Restroom sanitization &amp; restocking</li>
+                    <li>Break room &amp; kitchen cleaning</li>
+                    <li>Trash removal &amp; can liners</li>
+                    <li>Desk, surface &amp; furniture wipe-down</li>
+                    <li>Glass, door &amp; entryway cleaning</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Frequency Options</div>
+                  <ul class="service-detail-list">
+                    <li>Nightly (5 or 7 days/week)</li>
+                    <li>3x per week programs</li>
+                    <li>Weekly maintenance visits</li>
+                    <li>Bi-weekly programs</li>
+                    <li>Custom schedule by zone</li>
+                    <li>Holiday &amp; emergency coverage</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Contract Benefits</div>
+                  <ul class="service-detail-list">
+                    <li>Dedicated account manager</li>
+                    <li>Monthly quality inspection reports</li>
+                    <li>Crew consistency &amp; background checks</li>
+                    <li>Supply management included</li>
+                    <li>Secure key &amp; access protocols</li>
+                    <li>Quarterly deep-clean included</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Facilities We Serve</div>
+                  <ul class="service-detail-list">
+                    <li>Office buildings &amp; corporate HQs</li>
+                    <li>Medical &amp; dental admin spaces</li>
+                    <li>Retail &amp; shopping centers</li>
+                    <li>Schools &amp; educational facilities</li>
+                    <li>HOA clubhouses &amp; amenity spaces</li>
+                    <li>Hospitality &amp; mixed-use properties</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pricing-guide" aria-label="Janitorial pricing guide">
+                <div class="pricing-guide__title">Janitorial Contract Pricing</div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Office — Nightly (5 days/wk)</span>
+                  <span class="pricing-row__range">$0.07–$0.15 / sq ft/mo</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Office — 3x/week</span>
+                  <span class="pricing-row__range">$0.05–$0.10 / sq ft/mo</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Medical / Specialty Facility</span>
+                  <span class="pricing-row__range">$0.10–$0.20 / sq ft/mo</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Retail / Mixed-Use</span>
+                  <span class="pricing-row__range">$0.06–$0.12 / sq ft/mo</span>
+                </div>
+                <p class="pricing-note">
+                  * Monthly contracts start at $800/month. Minimum 3-month commitment for new programs.
+                  Multi-location and statewide discounts available.
+                </p>
+              </div>
+
+              <div style="margin-top:var(--space-xl);">
+                <a href="quote.html?service=janitorial" class="btn btn--primary">Request Janitorial Proposal</a>
+              </div>
+            </div>
+
+            <!-- 3. Turnover -->
+            <div class="service-section fade-in" id="turnover" aria-label="Turnover Cleaning service">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(0,255,179,0.15),rgba(0,212,255,0.1));border:1px solid rgba(0,255,179,0.25);" aria-hidden="true">🔑</div>
+                <div>
+                  <div class="section-label" style="margin-bottom:var(--space-sm);">Fast-Turnaround</div>
+                  <h2 style="margin-bottom:var(--space-sm);">Turnover &amp; Move-In Ready Cleaning</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    For property managers, landlords, and leasing companies who need commercial 
+                    spaces move-in ready fast. We specialize in quick-turn commercial unit cleaning 
+                    with multi-site capacity and reliable scheduling.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-detail-grid" role="list">
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Scope Includes</div>
+                  <ul class="service-detail-list">
+                    <li>Full interior deep clean</li>
+                    <li>Floor cleaning &amp; polish</li>
+                    <li>Window &amp; glass cleaning</li>
+                    <li>Restroom restoration</li>
+                    <li>Kitchen &amp; break room clean</li>
+                    <li>Light fixture &amp; vent cleaning</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Ideal Clients</div>
+                  <ul class="service-detail-list">
+                    <li>Commercial property managers</li>
+                    <li>Landlords &amp; building owners</li>
+                    <li>Real estate professionals</li>
+                    <li>Leasing companies &amp; agents</li>
+                    <li>HOA management firms</li>
+                    <li>Office park managers</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div style="margin-top:var(--space-xl);">
+                <a href="quote.html?service=turnover" class="btn btn--primary">Get Turnover Quote</a>
+              </div>
+            </div>
+
+            <!-- 4. Floor Care -->
+            <div class="service-section fade-in" id="floor-care" aria-label="Floor Care service">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(255,200,0,0.15),rgba(255,140,0,0.1));border:1px solid rgba(255,200,0,0.25);" aria-hidden="true">✨</div>
+                <div>
+                  <div class="section-label" style="margin-bottom:var(--space-sm);">High-Margin Add-On</div>
+                  <h2 style="margin-bottom:var(--space-sm);">Floor Care &amp; Polishing</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    Professional hard floor and carpet services for commercial facilities. 
+                    Extends floor life, improves appearance, and keeps facilities inspection-ready 
+                    year-round. Available as standalone services or as add-ons to any janitorial contract.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-detail-grid" role="list">
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Hard Floor Services</div>
+                  <ul class="service-detail-list">
+                    <li>VCT strip, seal &amp; wax</li>
+                    <li>Buffing &amp; burnishing</li>
+                    <li>Tile &amp; grout deep cleaning</li>
+                    <li>Grout line restoration</li>
+                    <li>Epoxy floor maintenance</li>
+                    <li>Polished concrete care</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Carpet Services</div>
+                  <ul class="service-detail-list">
+                    <li>Hot water extraction (steam)</li>
+                    <li>Encapsulation cleaning</li>
+                    <li>Stain treatment &amp; removal</li>
+                    <li>Deodorizing &amp; sanitizing</li>
+                    <li>Dry carpet cleaning</li>
+                    <li>Commercial matting &amp; rugs</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="pricing-guide" aria-label="Floor care pricing">
+                <div class="pricing-guide__title">Floor Care Pricing Reference</div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">VCT Strip &amp; Wax</span>
+                  <span class="pricing-row__range">$0.25–$0.50 / sq ft</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Carpet Extraction</span>
+                  <span class="pricing-row__range">$0.15–$0.30 / sq ft</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Tile &amp; Grout Restoration</span>
+                  <span class="pricing-row__range">$0.25–$0.45 / sq ft</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-row__service">Buffing / Burnishing</span>
+                  <span class="pricing-row__range">$0.05–$0.10 / sq ft</span>
+                </div>
+              </div>
+
+              <div style="margin-top:var(--space-xl);">
+                <a href="quote.html?service=floor-care" class="btn btn--primary">Request Floor Care Quote</a>
+              </div>
+            </div>
+
+            <!-- 5. Day Porter -->
+            <div class="service-section fade-in" id="day-porter" aria-label="Day Porter Services">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(0,71,255,0.15),rgba(0,212,255,0.1));border:1px solid rgba(0,71,255,0.25);" aria-hidden="true">👷</div>
+                <div>
+                  <div class="section-label" style="margin-bottom:var(--space-sm);">On-Site Dedicated Staff</div>
+                  <h2 style="margin-bottom:var(--space-sm);">Day Porter Services</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    Professional, uniformed on-site cleaning staff during business hours. 
+                    Day porters maintain your facility in real time — responding to spills, 
+                    restocking restrooms, and keeping high-traffic areas presentable throughout 
+                    the workday.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-detail-grid" role="list">
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Day Porter Responsibilities</div>
+                  <ul class="service-detail-list">
+                    <li>Lobby &amp; reception area maintenance</li>
+                    <li>Restroom monitoring &amp; restocking</li>
+                    <li>Elevator &amp; stairwell cleaning</li>
+                    <li>Common area tidying</li>
+                    <li>Spill response &amp; spot cleaning</li>
+                    <li>Trash collection rounds</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Scheduling Options</div>
+                  <ul class="service-detail-list">
+                    <li>Full-time (8 hrs/day, 5 days)</li>
+                    <li>Part-time (4 hrs/day)</li>
+                    <li>Peak hours only (morning/noon)</li>
+                    <li>Event-based coverage</li>
+                    <li>Temporary project staffing</li>
+                    <li>Weekend &amp; holiday coverage</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div style="margin-top:var(--space-xl);">
+                <a href="quote.html?service=day-porter" class="btn btn--primary">Request Day Porter Proposal</a>
+              </div>
+            </div>
+
+            <!-- 6. Pressure Washing & Specialty -->
+            <div class="service-section fade-in" id="pressure-washing" aria-label="Pressure Washing service">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(100,200,255,0.15),rgba(0,100,200,0.1));border:1px solid rgba(100,200,255,0.25);" aria-hidden="true">💧</div>
+                <div>
+                  <h2 style="margin-bottom:var(--space-sm);">Pressure Washing &amp; Exterior Cleaning</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    Commercial pressure washing for parking lots, building exteriors, walkways, 
+                    dumpster areas, loading docks, and all exterior surfaces. Available as a 
+                    standalone service or bundled with janitorial contracts.
+                  </p>
+                </div>
+              </div>
+
+              <div style="margin-top:var(--space-xl);">
+                <a href="quote.html?service=pressure-washing" class="btn btn--primary">Get Pressure Washing Quote</a>
+              </div>
+            </div>
+
+            <!-- 7. Specialty -->
+            <div class="service-section fade-in" id="specialty" aria-label="Specialty Cleaning service">
+              <div class="service-section__header">
+                <div class="service-section__icon-lg" style="background:linear-gradient(135deg,rgba(150,100,255,0.15),rgba(100,50,200,0.1));border:1px solid rgba(150,100,255,0.25);" aria-hidden="true">🔬</div>
+                <div>
+                  <h2 style="margin-bottom:var(--space-sm);">Specialty &amp; Emergency Cleaning</h2>
+                  <p style="color:var(--color-text-secondary);line-height:1.75;max-width:580px;">
+                    One-time or scheduled specialty cleaning for unique commercial situations. 
+                    Including disinfection protocols, emergency response cleaning, event cleanup, 
+                    and construction debris removal.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-detail-grid" role="list">
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Specialty Services</div>
+                  <ul class="service-detail-list">
+                    <li>Electrostatic disinfection</li>
+                    <li>Biohazard-safe sanitation</li>
+                    <li>Construction debris hauling</li>
+                    <li>Event setup &amp; breakdown cleaning</li>
+                    <li>Emergency flood response cleaning</li>
+                    <li>Mold prevention surface treatment</li>
+                  </ul>
+                </div>
+                <div class="service-detail-block" role="listitem">
+                  <div class="service-detail-block__title">Window &amp; Glass Detail</div>
+                  <ul class="service-detail-list">
+                    <li>Interior &amp; exterior window cleaning</li>
+                    <li>High-rise glass (with equipment)</li>
+                    <li>Mirror &amp; partition detail</li>
+                    <li>Glass door streak-free service</li>
+                    <li>Post-construction glass label removal</li>
+                    <li>Storefront glass programs</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div style="margin-top:var(--space-xl);">
+                <a href="quote.html?service=specialty" class="btn btn--primary">Request Specialty Service Quote</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="service-sidebar" aria-label="Services navigation sidebar">
+            <div class="sidebar-card mb-lg">
+              <div class="sidebar-card__header">
+                <div class="sidebar-card__title">All Services</div>
+              </div>
+              <div class="sidebar-card__body">
+                <nav class="service-nav-list" aria-label="Jump to service section">
+                  <a href="#post-construction" class="service-nav-item">
+                    <i class="fa-solid fa-hard-hat" aria-hidden="true"></i>
+                    Post-Construction Cleaning
+                  </a>
+                  <a href="#janitorial" class="service-nav-item">
+                    <i class="fa-solid fa-building" aria-hidden="true"></i>
+                    Facility Janitorial Programs
+                  </a>
+                  <a href="#turnover" class="service-nav-item">
+                    <i class="fa-solid fa-key" aria-hidden="true"></i>
+                    Turnover Cleaning
+                  </a>
+                  <a href="#floor-care" class="service-nav-item">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    Floor Care &amp; Polishing
+                  </a>
+                  <a href="#day-porter" class="service-nav-item">
+                    <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                    Day Porter Services
+                  </a>
+                  <a href="#pressure-washing" class="service-nav-item">
+                    <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                    Pressure Washing
+                  </a>
+                  <a href="#specialty" class="service-nav-item">
+                    <i class="fa-solid fa-flask" aria-hidden="true"></i>
+                    Specialty &amp; Emergency
+                  </a>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Quick Quote Card -->
+            <div class="sidebar-card mb-lg" style="background:linear-gradient(135deg,rgba(0,71,255,0.15),rgba(0,212,255,0.08));border-color:var(--color-border-strong);">
+              <div class="sidebar-card__body" style="gap:var(--space-lg);">
+                <div>
+                  <div style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-primary);margin-bottom:var(--space-sm);">Get a Free Quote</div>
+                  <p style="font-size:0.85rem;color:var(--color-text-secondary);line-height:1.6;">
+                    Upload your floor plans or scope of work. A specialist responds within 2 hours.
+                  </p>
+                </div>
+                <a href="quote.html" class="btn btn--primary w-full" style="justify-content:center;">
+                  <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+                  Start Your Quote
+                </a>
+                <a href="tel:3054346070" class="btn btn--ghost w-full" style="justify-content:center;">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                  (305) 434-6070
+                </a>
+              </div>
+            </div>
+
+            <!-- Trust Card -->
+            <div class="sidebar-card">
+              <div class="sidebar-card__header">
+                <div class="sidebar-card__title">Why Choose Us</div>
+              </div>
+              <div class="sidebar-card__body">
+                <div style="display:flex;flex-direction:column;gap:var(--space-sm);" role="list" aria-label="Trust credentials">
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                    <i class="fa-solid fa-shield-halved" style="color:var(--color-primary);" aria-hidden="true"></i>
+                    Licensed &amp; Fully Insured
+                  </div>
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                    <i class="fa-solid fa-hard-hat" style="color:var(--color-primary);" aria-hidden="true"></i>
+                    OSHA Safety Trained
+                  </div>
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                    <i class="fa-solid fa-user-check" style="color:var(--color-primary);" aria-hidden="true"></i>
+                    Background-Checked Crews
+                  </div>
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                    <i class="fa-solid fa-file-contract" style="color:var(--color-primary);" aria-hidden="true"></i>
+                    COI Available on Request
+                  </div>
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                    <i class="fa-solid fa-bolt" style="color:var(--color-primary);" aria-hidden="true"></i>
+                    2-Hour Quote Response
+                  </div>
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);font-size:0.82rem;color:var(--color-text-secondary);" role="listitem">
+                    <i class="fa-solid fa-star" style="color:var(--color-primary);" aria-hidden="true"></i>
+                    Satisfaction Guaranteed
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section--sm" aria-labelledby="services-cta-heading">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 class="cta-banner__title" id="services-cta-heading">
+            Ready to Get <span class="gradient-text">Started?</span>
+          </h2>
+          <p class="cta-banner__subtitle">
+            Submit your scope and receive a custom proposal within 2 business hours. 
+            No generic pricing — everything is tailored to your facility.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="quote.html" class="btn btn--primary btn--lg">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+              Get My Free Quote
+            </a>
+            <a href="contact.html" class="btn btn--ghost btn--lg">Contact a Specialist</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="ai-widget-placeholder"></div>
+
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
